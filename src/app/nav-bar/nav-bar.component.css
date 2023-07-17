@@ -1,0 +1,25 @@
+.navbar-brand {
+    margin-right: 300px;
+}
+
+.navbar-brand-container,
+.form-container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand-container {
+  order: -2; /* Move the brand to the left */
+}
+
+.form-container {
+  order: 1; /* Move the form to the right */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+  
+  
+  

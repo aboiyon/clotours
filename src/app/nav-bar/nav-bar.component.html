@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">CloTours</a>
+    <div class="navbar-brand-container">
+      <a class="navbar-brand" href="#"><h1>CloTours</h1></a>
+    </div>
     <button
       class="navbar-toggler"
       type="button"
@@ -14,15 +16,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tours</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Clothes</a>
-          </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -33,26 +26,48 @@
           >
             Services
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <ul class="dropdown-menu" id="servicesDropdown">
+            <li><a class="dropdown-item" href="#">Tours</a></li>
+            <li><a class="dropdown-item" href="#">Clothing</a></li>
+            <li><a class="dropdown-item" href="#">Bivarages</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Contacts</a>
+          <a class="nav-link active" aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
         </li>
       </ul>
-      <!-- <form class="d-flex" role="search">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
+      <div class="form-container">
+        <i #searchIcon class="fas fa-search search-icon" (click)="toggleSearchForm()"></i>
         <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> -->
+        <form #searchForm class="search-form d-none" *ngIf="isSearchFormHidden" role="search">
+          <!-- Form content goes here -->
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      
+      <!-- <div class="form-container">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div> -->
     </div>
   </div>
 </nav>
