@@ -3,8 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { ServicesComponent } from './services/services.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+
+import { ToursModule } from './services-section/tours/tours.module';
+import { ClothingModule } from './services-section/clothing/clothing.module';
+import { BeveragesModule } from './services-section/beverages/beverages.module';
+import { ServicesComponent } from './components/services/services.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { ServicesComponent } from './services/services.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ToursModule,
+    ClothingModule,
+    BeveragesModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ServicesComponent } from './services/services.component';
+import { ServicesComponent } from './components/services/services.component';
 
 const routes: Routes = [
-  { path: 'services', component: ServicesComponent }
+  {
+    path: 'services',
+    component: ServicesComponent,
+  },
+      { path: 'tours', loadChildren: () => import('./services-section/tours/tours.module').then(m => m.ToursModule) },
+      { path: 'clothing', loadChildren: () => import('./services-section/clothing/clothing.module').then(m => m.ClothingModule) },
+      { path: 'beverages', loadChildren: () => import('./services-section/beverages/beverages.module').then(m => m.BeveragesModule) },
 ];
 
 @NgModule({

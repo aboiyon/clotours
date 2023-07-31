@@ -12,6 +12,9 @@ export class NavBarComponent {
   @ViewChild('searchForm') searchForm!: ElementRef;
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit(){
     this.searchIcon.nativeElement.addEventListener('click', () => {
       this.searchForm.nativeElement.classList.toggle('d-none');
     });
