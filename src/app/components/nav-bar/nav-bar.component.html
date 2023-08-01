@@ -1,7 +1,8 @@
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <div class="navbar-brand-container">
-      <a class="navbar-brand" href="#"><h1>CloTours</h1></a>
+      <a class="navbar-brand" href="#"><h1><b>CloTours</b></h1></a>
     </div>
     <button
       class="navbar-toggler"
@@ -15,32 +16,23 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2  mb-lg-0">
         <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            routerLink="services"
-          >
-            Services
-          </a>
-          <ul class="dropdown-menu" id="servicesDropdown">
-            <li><a class="dropdown-item" routerLink="/tours" href="#">Tours</a></li>
-            <li><a class="dropdown-item" routerLink="/clothing" href="#">Clothing</a></li>
-            <li><a class="dropdown-item" routerLink="/beverages" href="#">Beverages</a></li>
+          <a mat-nav-item routerLink="/services" class="link-button"><b>Services</b></a>
+          <ul class="dropdown-menu" id="servicesDropdown" mb>
+            <li><a mat-menu-item routerLink="/tours" class="link-button">Tours</a></li>
+            <li><a mat-menu-item routerLink="/clothing" class="link-button">Clothing</a></li>
+            <li><a mat-menu-item routerLink="/beverages" class="link-button">Beverages</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About</a>
+          <a mat-nav-item routerLink="/about" class="link-button"><b>About</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a mat-nav-item routerLink="/projects" class="link-button"><b>Projects</b></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
+          <a mat-nav-item routerLink="/contacts" class="link-button"><b>Contacts</b></a>
         </li>
       </ul>
       <div class="form-container">
@@ -57,3 +49,6 @@
     </div>
   </div>
 </nav>
+
+
+

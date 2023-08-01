@@ -1,25 +1,150 @@
-.navbar-brand {
-    margin-right: 300px;
-}
-
 .navbar-brand-container,
 .form-container {
-  flex: 2;
+  flex: 1;
   display: flex;
   justify-content: center;
 }
 
+mat-form-field {
+  margin-right: 16px;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+  height: 36px;
+  padding: 0 8px;
+}
+
+.mat-select-panel mat-option {
+  height: 36px;
+}
+
 .navbar-brand-container {
-  order: -2; /* Move the brand to the left */
+  margin-right: 36px;
+  padding: 8px;
 }
 
 .form-container {
-  order: 1; /* Move the form to the right */
+
+  margin-left: 36px;
+  padding: 8px;
+  
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.mat-menu-item {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+.link-button {
+  text-decoration: none;
+  color: black;
+}
+
+.mat-icon-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.mat-icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.mat-menu-content {
+  background-color: #fff; /* Set desired background color for the menu */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.mat-menu-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.mat-menu-item:hover {
+  background-color: rgba(1,1,1,1);
+  border-radius: 4px;
+}
+
+/* Add margin and padding to the navbar brand */
+.navbar-brand-container {
+  margin-right: 16px;
+  padding: 8px;
+}
+
+/* Adjust button appearance */
+button.mat-icon-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Style the dropdown menu button */
+button.mat-icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/* Customize the appearance of the mat-menu */
+.mat-menu-content {
+  background-color: #fff; /* Set desired background color for the menu */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+/* Style the menu items in the dropdown menu */
+button.mat-menu-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button.mat-menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/* Apply flex layout to mat-toolbar content */
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Apply flex layout to content in mat-sidenav-container */
+mat-sidenav-container {
+  display: flex;
+}
+
+/* Define width for the sidenav */
+mat-sidenav {
+  width: 240px;
+}
+
+
   
   
   
