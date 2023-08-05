@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ export class HomeComponent {
 
   mouseEvent: MouseEvent | null = null;
 
-  constructor() {
+  constructor(public router: Router) {
     this.mouseEvent = null;
   }
 
@@ -29,6 +30,10 @@ export class HomeComponent {
 
   hideDifferentContent(index: number) {
     this.hovered[index] = false;
+  }
+
+  navigateToTours() {
+    this.router.navigate(['/tours']);
   }
   
 }
