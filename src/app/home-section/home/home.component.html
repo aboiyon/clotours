@@ -1,0 +1,84 @@
+<div class="container text-center">
+    <div class="row mt-3 gy-5 gx-4">
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+        <div class="image-container">
+            <img src="/assets/travel.jpg" class="img-fluid" id="blurred-image" alt="photo of beach front">
+            <div class="bio text-start">
+                <h1 class="fs-1 fw-bolder"><span>We Are CloTours</span></h1>
+                <p class="fw-bold fst-italic">Awesome clean tours website</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+        <!-- Column -->
+        <div class="container text-center">
+            <div class="row gy-4 gx-4">
+              <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="sub-image-container" (mouseenter)="showDifferentContent(0)" (mouseleave)="hideDifferentContent(0)">
+                  <img src="/assets/travel.jpg" class="img-fluid sub-image" alt="photo of beach front">
+                  <div class="sub text-center" *ngIf="!hovered[0]">
+                      <h1 class="fs-3 fw-bold"><span>Tours</span></h1>
+                      <p class="fst-italic">Best tour places</p>
+                  </div>
+                  <div class="overlay">
+                    <div class="sub text-center overlay-content" *ngIf="hovered[0]">
+                      <h1 class="fs-3 fw-bold"><span>Tours</span></h1>
+                      <p class="fst-italic">Best tour places</p>
+                      <button type="button" class="btn btn-outline-light" routerLink="tours">Discover More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="sub-image-container" (mouseenter)="showDifferentContent(1)" (mouseleave)="hideDifferentContent(1)">
+                  <img src="/assets/palm.jpg" class="img-fluid sub-image" alt="photo of beach front">
+                  <div class="sub text-center" *ngIf="!hovered[1]">
+                      <h1 class="fs-3 fw-bold"><span>Clothes</span></h1>
+                      <p class="fst-italic">Awesome clean tours website</p>
+                  </div>
+                  <div class="overlay">
+                    <div class="sub text-center overlay-content" *ngIf="hovered[1]">
+                      <h1 class="fs-3 fw-bold"><span>Clothes</span></h1>
+                      <p class="fst-italic">Awesome clean tours website</p>
+                      <button type="button" class="btn btn-outline-light">Discover More</button>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="sub-image-container" (mouseenter)="showDifferentContent(2)" (mouseleave)="hideDifferentContent(2)">
+                  <img src="/assets/palm.jpg" class="img-fluid sub-image" alt="photo of beach front">
+                  <div class="sub text-center" *ngIf="!hovered[2]">
+                      <h1 class="fs-3 fw-bold"><span>Beverages</span></h1>
+                      <p class="fst-italic">Awesome clean tours website</p>
+                  </div>
+                  <div class="overlay">
+                    <div class="sub text-center overlay-content" *ngIf="hovered[2]">
+                      <h1 class="fs-3 fw-bold"><span>Beverages</span></h1>
+                      <p class="fst-italic">Awesome clean tours website</p>
+                      <button type="button" class="btn btn-outline-light">Discover More</button>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="sub-image-container overflow-hidden" (mouseenter)="showDifferentContent(3)" (mouseleave)="hideDifferentContent(3)">
+                  <img src="/assets/beach.jpg" class="img-fluid sub-image" alt="photo of beach front">
+                  <div class="sub text-center" *ngIf="!hovered[3]">
+                      <h1 class="fs-3 fw-bold"><span>Accessories</span></h1>
+                      <p class="fst-italic">Awesome clean tours website</p>
+                  </div>
+                  <div class="overlay">
+                    <div class="sub text-center overlay-content" *ngIf="hovered[3]">
+                      <h1 class="fs-3 fw-bold"><span>Accessories</span></h1>
+                      <p class="fst-italic">Awesome clean tours website</p>
+                      <button type="button" class="btn btn-outline-light">Discover More</button>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

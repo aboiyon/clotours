@@ -1,0 +1,42 @@
+.navbar-brand-container,
+.form-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand-container {
+  margin-right: 36px;
+  padding: 8px;
+}
+
+.form-container {
+
+  margin-left: 36px;
+  padding: 8px;
+  
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.mat-menu-item {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.link-button {
+  text-decoration: none;
+  color: black;
+}
+
+  
+  
+  
