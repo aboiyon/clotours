@@ -7,4 +7,28 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  hovered:boolean[] = [false, false, false, false];
+
+  mouseEvent: MouseEvent | null = null;
+
+  constructor() {
+    this.mouseEvent = null;
+  }
+
+  ngOnInit() {
+  }
+
+  setMouseEvent(event: any) {
+    this.mouseEvent = event;
+  }
+
+
+  showDifferentContent(index: number) {
+    this.hovered[index] = true;
+  }
+
+  hideDifferentContent(index: number) {
+    this.hovered[index] = false;
+  }
+  
 }
