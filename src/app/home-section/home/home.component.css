@@ -64,4 +64,9 @@
   .sub-image-container:hover .overlay {
     opacity: 1;
   }
+
+  .link-button {
+    text-decoration: none;
+    color: white;
+  }
   

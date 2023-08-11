@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ClothingComponent } from 'src/app/services-section/clothing/clothing/clothing.component';
+import { ToursComponent } from '../tours/tours/tours.component';
 
 @Component({
   selector: 'app-services',

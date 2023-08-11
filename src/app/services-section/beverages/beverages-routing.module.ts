@@ -4,7 +4,7 @@ import { BeveragesComponent } from './beverages/beverages.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'beverages',
     component: BeveragesComponent,
   }
 ];
