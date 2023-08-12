@@ -14,10 +14,8 @@ const routes: Routes = [
       { path: 'tours', loadChildren: () => import('./services-section/tours/tours.module').then(m => m.ToursModule) },
       { path: 'clothing', loadChildren: () => import('./services-section/clothing/clothing.module').then(m => m.ClothingModule) },
       { path: 'beverages', loadChildren: () => import('./services-section/beverages/beverages.module').then(m => m.BeveragesModule) },
+      { path: 'projects', loadChildren: () => import('./services-section/projects/projects.module').then(m => m.ProjectsModule) },
       ],
-  },
-  {
-    path: 'tours', component: ToursComponent
   }
 ];
 
