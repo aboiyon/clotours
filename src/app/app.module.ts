@@ -15,6 +15,7 @@ import { ClothingModule } from './services-section/clothing/clothing.module';
 import { ClothingRoutingModule } from './services-section/clothing/clothing-routing.module';
 import { BeveragesModule } from './services-section/beverages/beverages.module';
 import { BeveragesRoutingModule } from './services-section/beverages/beverages-routing.module';
+import { ProjectsModule } from './services-section/projects/projects.module';
 import { ServicesComponent } from './services-section/services/services.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -56,7 +57,8 @@ import { HomeRoutingModule } from './home-section/home/home-routing.module';
     HomeRoutingModule,
     ToursRoutingModule,
     ClothingRoutingModule,
-    BeveragesRoutingModule
+    BeveragesRoutingModule,
+    ProjectsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
