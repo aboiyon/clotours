@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 import { ToursRoutingModule } from './tours-routing.module';
 import { ToursComponent } from './tours/tours.component';
 
+import { MatCardModule } from '@angular/material/card';
+import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -11,7 +14,9 @@ import { ToursComponent } from './tours/tours.component';
   ],
   imports: [
     CommonModule,
-    ToursRoutingModule
+    ToursRoutingModule,
+    MatCardModule,
+    MatFormFieldModule
   ]
 })
 export class ToursModule { }

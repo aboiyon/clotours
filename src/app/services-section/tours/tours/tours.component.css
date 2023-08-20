@@ -1,0 +1,14 @@
+.tours-container {
+  display: flex;
+  flex-direction: row; /* Display cards in a row */
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  padding: 16px; /* Add some spacing around the cards */
+}
+
+.card {
+  flex: 0 0 auto; /* Make each card have fixed width */
+  width: 300px; /* Adjust this width as needed */
+  margin-right: 16px; /* Add space between cards */
+  border: 1px solid #ddd; /* Add a border for visual separation */
+  padding: 16px;
+}
