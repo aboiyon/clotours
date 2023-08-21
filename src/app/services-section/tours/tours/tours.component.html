@@ -1,8 +1,12 @@
 <div class="tours-container">
-  <div class="card" *ngFor="let tour of tours">
-    <img [src]="tour.imageUrl" alt="Tour Site Image">
-    <h2>{{ tour.name }}</h2>
-    <p>{{ tour.description }}</p>
-    <span>Price: {{ tour.price | currency:'USD':'symbol':'1.2-2' }}</span>
+  <button mat-button class="scroll-button" (click)="scrollLeft()">&#8249;</button>
+  <div class="cards-wrapper" #cardsWrapper>
+    <div class="card" *ngFor="let tour of tours">
+      <img [src]="tour.imageUrl" alt="Tour Site Image">
+      <h2>{{ tour.name }}</h2>
+      <p>{{ tour.description }}</p>
+      <span>Price: {{ tour.price | currency:'USD':'symbol':'1.2-2' }}</span>
+    </div>
   </div>
+  <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
 </div>

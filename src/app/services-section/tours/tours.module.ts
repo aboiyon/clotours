@@ -5,7 +5,7 @@ import { ToursRoutingModule } from './tours-routing.module';
 import { ToursComponent } from './tours/tours.component';
 
 import { MatCardModule } from '@angular/material/card';
-import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
