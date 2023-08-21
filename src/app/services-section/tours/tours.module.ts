@@ -17,6 +17,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ToursRoutingModule,
     MatCardModule,
     MatFormFieldModule
+  ],
+  exports: [
+    ToursComponent
   ]
 })
 export class ToursModule { }
