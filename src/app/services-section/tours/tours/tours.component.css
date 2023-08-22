@@ -13,8 +13,8 @@
 
 .card {
   flex: 0 0 calc(33.33% - 16px); /* Make each card have fixed width */
-  width: 150px; /* Adjust this width as needed */
-  margin-right: 36px; /* Add space between cards */
+  width: 174px; /* Adjust this width as needed */
+  margin-right: 20px; /* Add space between cards */
   margin-bottom: 16px;
   border: 1px solid #ddd; /* Add a border for visual separation */
   padding: 16px;
@@ -27,7 +27,6 @@
   flex-direction: row; /* Display cards in a row */
   overflow-x: hidden; /* Enable horizontal scrolling */
   scroll-behavior: smooth; /* Add smooth scrolling behavior */
-  /* transition: scroll-left 0.3s, scroll-right 0.3s; */
   transition: transform 0.3s;
 }
 
