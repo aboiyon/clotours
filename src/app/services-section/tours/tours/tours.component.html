@@ -1,4 +1,9 @@
-<div class="tours-container">
+<div>
+  <div class="heading">
+    <h1>Tours</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+  </div> 
+<div class="services-container">
   <button mat-button class="scroll-button" (click)="scrollLeft()">&#8249;</button>
   <div class="cards-wrapper" #cardsWrapper>
     <div class="card" *ngFor="let tour of tours">
@@ -9,4 +14,5 @@
     </div>
   </div>
   <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
+</div>
 </div>

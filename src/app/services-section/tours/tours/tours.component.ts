@@ -51,7 +51,7 @@ export class ToursComponent {
 
   scrollLeft() {
     if (this.cardsWrapper) {
-      const scrollAmount = 200;
+      const scrollAmount = -200;
       const currentScroll = this.cardsWrapper.nativeElement.scrollLeft;
       this.scrollTo(this.cardsWrapper.nativeElement, currentScroll + scrollAmount, 500); // Adjust the value as needed
     }
