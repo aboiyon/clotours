@@ -73,4 +73,9 @@
     text-decoration: none;
     color: white;
   }
+
+  .app-tours {
+    margin: 50px;
+    text-align: left;
+  }
   

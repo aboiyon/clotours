@@ -5,5 +5,61 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .heading {
     margin-top: 50px;
-    margin-left: 280px;
+    margin-left: 250px;
 }
+
+  .services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row; /* Display cards in a row */
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    padding: 16px 0; /* vertical padding*/
+    /* margin-left: 120px;  */
+    /* Add left margin */
+    /* margin-right: 150px; */
+    /* padding-right: 16px;  */
+    /* Add right padding */
+    overflow: hidden;
+  }
+  
+  .card {
+    flex: 0 0 calc(33.33% - 16px); /* Make each card have fixed width */
+    width: 200px; /* Adjust this width as needed */
+    margin-right: 20px; /* Add space between cards */
+    /* margin-bottom: 16px; */
+    border: 1px solid #ddd; /* Add a border for visual separation */
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #fff; /* White background */
+  }
+  
+  .cards-wrapper {
+    display: flex;
+    flex-direction: row; /* Display cards in a row */
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Add smooth scrolling behavior */
+    transition: transform 0.3s;
+    padding-left: 20px;
+  }
+  
+  /* Tablet styles (2 cards) */
+  @media (max-width: 1024px) {
+    .card {
+      flex: 0 0 calc(50% - 16px); /* Distribute 2 cards evenly */
+    }
+    .heading {
+      margin-left: 40px;
+    }
+  }
+  
+  /* Mobile styles (1 card) */
+  @media (max-width: 768px) {
+    .card {
+      flex: 0 0 calc(100% - 16px); /* Display 1 card per row */
+    }
+  }
+  
+  
+  
+  
