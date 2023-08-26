@@ -5,7 +5,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .heading {
     margin-top: 50px;
-    margin-left: 250px;
+    margin-left: 270px;
 }
 
   .services-container {
@@ -41,6 +41,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     scroll-behavior: smooth; /* Add smooth scrolling behavior */
     transition: transform 0.3s;
     padding-left: 20px;
+  }
+
+  .service-image {
+    height: 500px;
   }
   
   /* Tablet styles (2 cards) */
