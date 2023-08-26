@@ -12,6 +12,9 @@ import { ProjectsComponent } from './projects/projects.component';
   imports: [
     CommonModule,
     ProjectsRoutingModule
+  ],
+  exports: [
+    ProjectsComponent
   ]
 })
 export class ProjectsModule { }

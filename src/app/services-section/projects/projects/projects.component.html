@@ -1,1 +1,25 @@
-<p>projects works!</p>
+<div fxLayout = "row" fxLayoutAlign="start center">
+    <div class="heading">
+      <h1>Accessories</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    </div> 
+  <div class="services-container">
+    <div class="scroll-button">
+      <button mat-button (click)="scrollLeft()">&#8249;</button>
+    </div>
+    
+    <div class="cards-wrapper" #cardsWrapper>
+      <div class="card" *ngFor="let accessorie of accessories">
+        <img class="service-image" [src]="accessorie.imageUrl" alt="Tour Site Image">
+        <h2>{{ accessorie.name }}</h2>
+        <p>{{ accessorie.description }}</p>
+        <span>Price: {{ accessorie.price | currency:'USD':'symbol':'1.2-2' }}</span>
+      </div>
+    </div>
+    <div>
+      <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
+    </div>
+    
+  </div>
+  </div>
+  

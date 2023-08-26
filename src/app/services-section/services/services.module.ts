@@ -5,6 +5,7 @@ import { ServicesRoutingModule } from './services-routing.module';
 import { ToursModule } from '../tours/tours.module';
 import { ClothingModule } from '../clothing/clothing.module';
 import { BeveragesModule } from '../beverages/beverages.module';
+import { ProjectsModule } from '../projects/projects.module';
 
 @NgModule({
   declarations: [],
@@ -13,7 +14,8 @@ import { BeveragesModule } from '../beverages/beverages.module';
     ServicesRoutingModule,
     ToursModule,
     ClothingModule,
-    BeveragesModule
+    BeveragesModule,
+    ProjectsModule
   ]
 })
 export class ServicesModule { }
