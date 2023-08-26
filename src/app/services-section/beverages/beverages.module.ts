@@ -12,6 +12,9 @@ import { BeveragesComponent } from './beverages/beverages.component';
   imports: [
     CommonModule,
     BeveragesRoutingModule
+  ],
+  exports: [
+    BeveragesComponent
   ]
 })
 export class BeveragesModule { }
