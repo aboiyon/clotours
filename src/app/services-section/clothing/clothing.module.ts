@@ -12,6 +12,9 @@ import { ClothingComponent } from './clothing/clothing.component';
   imports: [
     CommonModule,
     ClothingRoutingModule
+  ],
+  exports: [
+    ClothingComponent
   ]
 })
 export class ClothingModule { }

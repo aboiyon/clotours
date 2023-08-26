@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { ServicesRoutingModule } from './services-routing.module';
 import { ToursModule } from '../tours/tours.module';
+import { ClothingModule } from '../clothing/clothing.module';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
     ServicesRoutingModule,
-    ToursModule
+    ToursModule,
+    ClothingModule
   ]
 })
 export class ServicesModule { }

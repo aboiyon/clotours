@@ -46,6 +46,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .service-image {
     height: 500px;
   }
+
+  .scroll-button {
+    
+  }
   
   /* Tablet styles (2 cards) */
   @media (max-width: 1024px) {
