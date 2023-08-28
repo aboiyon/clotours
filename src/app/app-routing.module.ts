@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ServicesComponent } from './services-section/services/services.component';
 import { HomeComponent } from './home-section/home/home.component';
-import { ToursComponent } from './services-section/tours/tours/tours.component';
 
 const routes: Routes = [
   {
