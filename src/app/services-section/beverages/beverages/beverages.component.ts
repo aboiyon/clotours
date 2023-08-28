@@ -12,39 +12,39 @@ export class BeveragesComponent {
 
   beverages = [
     {
-      name: 'Kahawa',
+      name: 'Smoothie',
       description: 'Explore the city\'s landmarks',
-      imageUrl: '/assets/beach.jpg',
+      imageUrl: '/assets/smoothie.png',
       price: 70.00
     },
     {
-      name: 'Ukwaju',
+      name: 'Kahawa',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/palm.jpg',
+      imageUrl: '/assets/kahawa.png',
       price: 70.00
     },
     {
       name: 'Mnazi',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/island-tour.png',
+      imageUrl: '/assets/mnazi.png',
       price: 70.00
     },
     {
       name: 'Maji Safi',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/travel.jpg',
+      imageUrl: '/assets/water.png',
       price: 70.00
     },
     {
-      name: 'Mountains',
+      name: 'Mango Juice',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/travel.jpg',
+      imageUrl: '/assets/ukwaju.png',
       price: 70.00
     },
     {
-      name: 'Game Parks',
+      name: 'Ukwaju',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/travel.jpg',
+      imageUrl: '/assets/ukaju.png',
       price: 70.00
     },
   ];

@@ -12,9 +12,9 @@ export class ProjectsComponent {
 
   accessories = [
     {
-      name: 'Kahawa',
+      name: 'Accessories',
       description: 'Explore the city\'s landmarks',
-      imageUrl: '/assets/beach.jpg',
+      imageUrl: '/assets/accessories.png',
       price: 70.00
     },
     {

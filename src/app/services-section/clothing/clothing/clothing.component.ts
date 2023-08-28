@@ -12,39 +12,51 @@ export class ClothingComponent {
 
   clothes = [
     {
-      name: 'Dera',
+      name: 'Hand Made',
       description: 'Explore the city\'s landmarks',
-      imageUrl: '/assets/beach.jpg',
+      imageUrl: '/assets/hand-made.png',
       price: 70.00
     },
     {
-      name: 'Bikini',
+      name: 'Dera',
+      description: 'Explore the city\'s landmarks',
+      imageUrl: '/assets/dera.png',
+      price: 70.00
+    },
+    {
+      name: 'Boots',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/palm.jpg',
+      imageUrl: '/assets/boots.png',
       price: 70.00
     },
     {
       name: 'Shorts',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/island-tour.png',
+      imageUrl: '/assets/shorts.png',
       price: 70.00
     },
     {
       name: 'Top\'s',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/travel.jpg',
+      imageUrl: '/assets/top.png',
       price: 70.00
     },
     {
       name: 'Jeans',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/travel.jpg',
+      imageUrl: '/assets/jeans.png',
       price: 70.00
     },
     {
-      name: 'Pajama\'s',
+      name: 'Blazers',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/travel.jpg',
+      imageUrl: '/assets/blazer.png',
+      price: 70.00
+    },
+    {
+      name: 't-shirts',
+      description: 'Discover local spices and flavors',
+      imageUrl: '/assets/tshirts.png',
       price: 70.00
     },
   ];
