@@ -53,7 +53,7 @@ export class ToursComponent {
     if (this.cardsWrapper) {
       const scrollAmount = -300;
       const currentScroll = this.cardsWrapper.nativeElement.scrollLeft;
-      this.scrollTo(this.cardsWrapper.nativeElement, currentScroll + scrollAmount, 500); // Adjust the value as needed
+      this.scrollTo(this.cardsWrapper.nativeElement, currentScroll + scrollAmount, 500);
     }
   }
 
@@ -62,7 +62,6 @@ export class ToursComponent {
       const scrollAmount = 300;
       const currentScroll = this.cardsWrapper.nativeElement.scrollLeft;
       this.scrollTo(this.cardsWrapper.nativeElement, currentScroll + scrollAmount, 500);
-      // this.cardsWrapper.nativeElement.scrollLeft += scrollAmount; // Adjust the value as needed
     }
   }
 

@@ -31,9 +31,5 @@ export class HomeComponent {
   hideDifferentContent(index: number) {
     this.hovered[index] = false;
   }
-
-  navigateToTours() {
-    this.router.navigate(['/tours']);
-  }
   
 }
