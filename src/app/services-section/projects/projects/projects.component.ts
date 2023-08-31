@@ -12,19 +12,19 @@ export class ProjectsComponent {
 
   accessories = [
     {
-      name: 'Accessories',
+      name: 'AirBnB',
       description: 'Explore the city\'s landmarks',
       imageUrl: '/assets/accessories.png',
       price: 70.00
     },
     {
-      name: 'Ukwaju',
+      name: 'Cottages',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/palm.jpg',
       price: 70.00
     },
     {
-      name: 'Mnazi',
+      name: 'Restaurants',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/island-tour.png',
       price: 70.00
