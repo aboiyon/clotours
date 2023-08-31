@@ -28,14 +28,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatListModule } from '@angular/material/list';
 import { HomeRoutingModule } from './home-section/home/home-routing.module';
+import { FooterModule } from './components/footer/footer.module';
+import { NavBarModule } from './components/nav-bar/nav-bar.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     ServicesComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +59,9 @@ import { HomeRoutingModule } from './home-section/home/home-routing.module';
     ToursRoutingModule,
     ClothingRoutingModule,
     BeveragesRoutingModule,
-    ProjectsModule
+    ProjectsModule,
+    NavBarModule,
+    FooterModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'en-US' }],
   bootstrap: [AppComponent]

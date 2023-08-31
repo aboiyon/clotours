@@ -2,8 +2,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ServicesComponent } from './services-section/services/services.component';
 import { HomeComponent } from './home-section/home/home.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
+  {
+    path: 'nav', component: NavBarComponent
+  },
+  {
+    path: 'footer', component: FooterComponent
+  },
   {
     path: '', component: HomeComponent
   },
