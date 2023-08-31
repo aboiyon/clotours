@@ -14,19 +14,19 @@ export class ToursComponent {
     {
       name: 'City Tour',
       description: 'Explore the city\'s landmarks',
-      imageUrl: '/assets/beach.jpg',
+      imageUrl: '/assets/city.png',
       price: 70.00
     },
     {
       name: 'Spice Tour',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/palm.jpg',
+      imageUrl: 'assets/spices.png',
       price: 70.00
     },
     {
       name: 'Island Tour',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/island-tour.png',
+      imageUrl: '/assets/island.png',
       price: 70.00
     },
     {
@@ -38,13 +38,13 @@ export class ToursComponent {
     {
       name: 'Mountains',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/travel.jpg',
+      imageUrl: '/assets/kilimanjaro.png',
       price: 70.00
     },
     {
       name: 'Game Parks',
       description: 'Discover local spices and flavors',
-      imageUrl: '/assets/travel.jpg',
+      imageUrl: '/assets/elephant.png',
       price: 70.00
     },
   ];
