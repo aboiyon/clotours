@@ -80,13 +80,21 @@
 
   @media (max-width: 1024px) {
     .landing {
-      height: 220%;
+      height: 225%;
+    }
+    .sub-image-container {
+      margin-left: -14%;
+      margin-right: -14%;
     }
   }
 
   @media (max-width: 768px) {
     .landing {
       height: 205%;
+    }
+    .sub-image-container {
+      margin-left: -12%;
+      margin-right: -12%;
     }
   }
 
