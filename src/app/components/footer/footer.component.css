@@ -56,3 +56,12 @@ footer{background:#333333}
         margin-left: 0%;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .h5 {
+        margin-left: 7%;
+    }
+    .contact {
+        margin-left: 0%;
+    }
+}
