@@ -73,7 +73,15 @@
     color: white;
   }
 
-  .app-tours {
+  /* .app-tours {
     text-align: left;
+  } */
+
+  .products-wrapper {
+    text-align: left;
+  }
+  .heading{
+    margin-top: 50px;
+    margin-left: 270px;
   }
   
