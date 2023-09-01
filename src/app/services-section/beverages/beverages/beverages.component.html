@@ -1,25 +1,4 @@
-<div fxLayout = "row" fxLayoutAlign="start center" class="container section">
-    <div class="heading">
-      <h1>Beverages</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-    </div> 
-  <div class="services-container">
-    <div class="scroll-button">
-      <button mat-button (click)="scrollLeft()">&#8249;</button>
-    </div>
-    
-    <div class="cards-wrapper" #cardsWrapper>
-      <div class="card" *ngFor="let beverage of beverages">
-        <img class="service-image" [src]="beverage.imageUrl" alt="Tour Site Image">
-        <h2>{{ beverage.name }}</h2>
-        <p>{{ beverage.description }}</p>
-        <span>Price: {{ beverage.price | currency:'USD':'symbol':'1.2-2' }}</span>
-      </div>
-    </div>
-    <div>
-      <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
-    </div>
-    
-  </div>
-  </div>
-  
+<div class="beverages-container">
+  <app-coffee></app-coffee>
+  <app-tea></app-tea>
+</div>

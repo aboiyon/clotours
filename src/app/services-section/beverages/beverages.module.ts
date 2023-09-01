@@ -3,18 +3,24 @@ import { CommonModule } from '@angular/common';
 
 import { BeveragesRoutingModule } from './beverages-routing.module';
 import { BeveragesComponent } from './beverages/beverages.component';
+import { TeaComponent } from './tea/tea.component';
+import { CoffeeComponent } from './coffee/coffee.component';
 
 
 @NgModule({
   declarations: [
-    BeveragesComponent
+    BeveragesComponent,
+    TeaComponent,
+    CoffeeComponent
   ],
   imports: [
     CommonModule,
     BeveragesRoutingModule
   ],
   exports: [
-    BeveragesComponent
+    BeveragesComponent,
+    TeaComponent,
+    CoffeeComponent
   ]
 })
 export class BeveragesModule { }
