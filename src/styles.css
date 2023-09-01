@@ -51,10 +51,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .scroll-button {
     
   }
-
-  .section {
-    margin-top: 100px;
-  }
   
   /* Tablet styles (2 cards) */
   @media (max-width: 1024px) {

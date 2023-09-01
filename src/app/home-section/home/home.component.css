@@ -1,5 +1,6 @@
 .landing {
   max-width: 100%;
+  height: 80%;
 }
 
 .image-container {
@@ -73,15 +74,23 @@
     color: white;
   }
 
-  /* .app-tours {
-    text-align: left;
-  } */
-
   .products-wrapper {
     text-align: left;
   }
-  .heading{
-    margin-top: 50px;
-    margin-left: 270px;
+
+  @media (max-width: 1024px) {
+    .landing {
+      height: 220%;
+    }
   }
+
+  @media (max-width: 768px) {
+    .landing {
+      height: 205%;
+    }
+  }
+
+
+  
+
   

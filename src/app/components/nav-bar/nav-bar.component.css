@@ -41,6 +41,26 @@
   margin-top: 11px;
 }
 
+@media (max-width: 1024px) {
+  .navbar-brand-container {
+    margin-left: -58%;
+    padding: 8px;
+  }
+  .navbar-toggler {
+    margin-right: 5%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand-container {
+    margin-left: -300px;
+    padding: 8px;
+  }
+  .navbar-toggler {
+    margin-right: 7%; 
+  }
+}
+
   
   
   
