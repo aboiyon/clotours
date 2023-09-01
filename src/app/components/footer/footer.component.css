@@ -37,3 +37,12 @@ footer .sitemap a:hover {
     color: #fff;
 }
 footer{background:#333333}
+
+@media (max-width: 768px) {
+    .h5 {
+        margin-left: 13%;
+    }
+    .contact {
+        margin-left: 1%;
+    }
+  }
