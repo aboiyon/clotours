@@ -30,6 +30,7 @@ import { MatListModule } from '@angular/material/list';
 import { HomeRoutingModule } from './home-section/home/home-routing.module';
 import { FooterModule } from './components/footer/footer.module';
 import { NavBarModule } from './components/nav-bar/nav-bar.module';
+import { SharedModule } from './shared/shared/shared.module';
 
 
 @NgModule({
@@ -60,8 +61,7 @@ import { NavBarModule } from './components/nav-bar/nav-bar.module';
     ClothingRoutingModule,
     BeveragesRoutingModule,
     ProjectsModule,
-    NavBarModule,
-    FooterModule
+    SharedModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'en-US' }],
   bootstrap: [AppComponent]
