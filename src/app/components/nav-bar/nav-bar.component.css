@@ -53,7 +53,7 @@
 
 @media (max-width: 768px) {
   .navbar-brand-container {
-    margin-left: -300px;
+    margin-left: -43%;
     padding: 8px;
   }
   .navbar-toggler {
