@@ -9,10 +9,11 @@ import { MatMenuModule } from '@angular/material/menu';
 import { RouterModule } from '@angular/router';
 import { ItemQuantityComponent } from './components/item-quantity/item-quantity.component';
 import { TitleComponent } from './components/title/title.component';
+import { SimplePageComponent } from './components/simple-page/simple-page.component';
 
 
 @NgModule({
-  declarations: [NavBarComponent, FooterComponent, ItemQuantityComponent, TitleComponent],
+  declarations: [NavBarComponent, FooterComponent, ItemQuantityComponent, TitleComponent, SimplePageComponent],
   imports: [
     CommonModule,
     SharedRoutingModule,
