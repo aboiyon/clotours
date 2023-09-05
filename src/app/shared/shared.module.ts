@@ -8,10 +8,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { RouterModule } from '@angular/router';
 import { ItemQuantityComponent } from './components/item-quantity/item-quantity.component';
+import { TitleComponent } from './components/title/title.component';
 
 
 @NgModule({
-  declarations: [NavBarComponent, FooterComponent, ItemQuantityComponent],
+  declarations: [NavBarComponent, FooterComponent, ItemQuantityComponent, TitleComponent],
   imports: [
     CommonModule,
     SharedRoutingModule,
