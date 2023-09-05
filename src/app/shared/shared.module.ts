@@ -29,7 +29,8 @@ import { WordWrapPipe } from './pipes/word-wrap.pipe';
     FooterComponent,
     MatIconModule,
     MatIconModule,
-    ItemQuantityComponent
+    ItemQuantityComponent,
+    SimplePageComponent
     // MatSnackBarModule,
     // MatTooltipModule, 
   ]
