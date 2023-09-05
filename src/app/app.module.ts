@@ -16,7 +16,7 @@ import { ClothingRoutingModule } from './features/clothing/clothing-routing.modu
 import { BeveragesModule } from './features/beverages/beverages.module';
 import { BeveragesRoutingModule } from './features/beverages/beverages-routing.module';
 import { LinksModule } from './features/links/links.module';
-import { ProductsComponent } from './features/products/products.component';
+import { ProductsComponent } from './features/products/pages/product/products.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatMenuModule } from '@angular/material/menu';

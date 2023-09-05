@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductsComponent } from './features/products/products.component';
+import { ProductsComponent } from './features/products/pages/product/products.component';
 import { HomeComponent } from './home-section/home/home.component';
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
