@@ -26,8 +26,9 @@ import { ItemQuantityComponent } from './components/item-quantity/item-quantity.
     FooterComponent,
     MatIconModule,
     MatIconModule,
+    ItemQuantityComponent
     // MatSnackBarModule,
-    // MatTooltipModule,
+    // MatTooltipModule, 
   ]
 })
 export class SharedModule { }
