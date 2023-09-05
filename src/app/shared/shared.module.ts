@@ -10,10 +10,11 @@ import { RouterModule } from '@angular/router';
 import { ItemQuantityComponent } from './components/item-quantity/item-quantity.component';
 import { TitleComponent } from './components/title/title.component';
 import { SimplePageComponent } from './components/simple-page/simple-page.component';
+import { WordWrapPipe } from './pipes/word-wrap.pipe';
 
 
 @NgModule({
-  declarations: [NavBarComponent, FooterComponent, ItemQuantityComponent, TitleComponent, SimplePageComponent],
+  declarations: [NavBarComponent, FooterComponent, ItemQuantityComponent, TitleComponent, SimplePageComponent, WordWrapPipe],
   imports: [
     CommonModule,
     SharedRoutingModule,
