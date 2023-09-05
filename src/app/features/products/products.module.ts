@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ServicesRoutingModule } from './services-routing.module';
+import { ProductsRoutingModule } from './products-routing.module';
 import { ToursModule } from '../tours/tours.module';
 import { ClothingModule } from '../clothing/clothing.module';
 import { BeveragesModule } from '../beverages/beverages.module';
-import { ProjectsModule } from '../projects/projects.module';
+import { LinksModule } from '../links/links.module';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    ServicesRoutingModule,
+    ProductsRoutingModule,
     ToursModule,
     ClothingModule,
     BeveragesModule,
-    ProjectsModule
+    LinksModule
   ]
 })
-export class ServicesModule { }
+export class ProductsModule { }

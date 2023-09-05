@@ -7,7 +7,7 @@ const routes: Routes = [
   
   {
     path: 'tours',
-    loadChildren: () => import('../../services-section/tours/tours.module').then(m => m.ToursModule)
+    loadChildren: () => import('../../features/tours/tours.module').then(m => m.ToursModule)
   }
 ];
 

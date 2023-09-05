@@ -3,10 +3,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.css']
+  templateUrl: './products.component.html',
+  styleUrls: ['./products.component.css']
 })
-export class ServicesComponent {
+export class ProductsComponent {
 
   constructor(public router: Router, public activateRoute: ActivatedRoute) {}
 

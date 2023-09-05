@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ServicesComponent } from './services-section/services/services.component';
+import { ProductsComponent } from './features/products/products.component';
 import { HomeComponent } from './home-section/home/home.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 const routes: Routes = [
   {
@@ -16,12 +16,12 @@ const routes: Routes = [
     path: '', component: HomeComponent
   },
   {
-    path: 'services', component: ServicesComponent,
+    path: 'services', component: ProductsComponent,
       children: [
-      { path: 'tours', loadChildren: () => import('./services-section/tours/tours.module').then(m => m.ToursModule) },
-      { path: 'clothing', loadChildren: () => import('./services-section/clothing/clothing.module').then(m => m.ClothingModule) },
-      { path: 'beverages', loadChildren: () => import('./services-section/beverages/beverages.module').then(m => m.BeveragesModule) },
-      { path: 'projects', loadChildren: () => import('./services-section/projects/projects.module').then(m => m.ProjectsModule) },
+      { path: 'tours', loadChildren: () => import('./features/tours/tours.module').then(m => m.ToursModule) },
+      { path: 'clothing', loadChildren: () => import('./features/clothing/clothing.module').then(m => m.ClothingModule) },
+      { path: 'beverages', loadChildren: () => import('./features/beverages/beverages.module').then(m => m.BeveragesModule) },
+      { path: 'projects', loadChildren: () => import('./features/links/links.module').then(m => m.LinksModule) },
       ],
   }
 ];
