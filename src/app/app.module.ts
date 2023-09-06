@@ -15,7 +15,6 @@ import { ClothingRoutingModule } from './features/clothing/clothing-routing.modu
 import { BeveragesModule } from './features/beverages/beverages.module';
 import { BeveragesRoutingModule } from './features/beverages/beverages-routing.module';
 import { LinksModule } from './features/links/links.module';
-import { ProductsComponent } from './features/products/pages/product/products.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatMenuModule } from '@angular/material/menu';
@@ -37,7 +36,6 @@ import { AuthModule } from './features/auth/auth.module';
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsComponent,
     HomeComponent
   ],
   imports: [
@@ -67,7 +65,7 @@ import { AuthModule } from './features/auth/auth.module';
     DataModule,
     CheckoutModule,
     AuthModule,
-    
+
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'en-US' }],
   bootstrap: [AppComponent]
