@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 
 import { HomeComponent } from './home-section/home/home.component';
 import { HomeModule } from './home-section/home/home.module';
@@ -28,9 +27,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatListModule } from '@angular/material/list';
 import { HomeRoutingModule } from './home-section/home/home-routing.module';
-import { FooterModule } from './shared/components/footer/footer.module';
-import { NavBarModule } from './shared/components/nav-bar/nav-bar.module';
 import { SharedModule } from './shared/shared.module';
+import { CartModule } from './features/cart/cart.module';
+import { DataModule } from './data/data.module';
+import { CheckoutModule } from './features/checkout/checkout.module';
+import { AuthModule } from './features/auth/auth.module';
 
 
 @NgModule({
@@ -61,7 +62,12 @@ import { SharedModule } from './shared/shared.module';
     ClothingRoutingModule,
     BeveragesRoutingModule,
     LinksModule,
-    SharedModule
+    SharedModule,
+    CartModule,
+    DataModule,
+    CheckoutModule,
+    AuthModule,
+    
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'en-US' }],
   bootstrap: [AppComponent]

@@ -7,12 +7,10 @@ import { ClothingModule } from '../clothing/clothing.module';
 import { BeveragesModule } from '../beverages/beverages.module';
 import { LinksModule } from '../links/links.module';
 import { ProductListComponent } from './pages/product-list/product-list.component';
-// import { ProductListComponent } from './pages/product-list/product-list.component';
+
 
 @NgModule({
   declarations: [
-    // ProductListComponent
-  
     ProductListComponent
   ],
   imports: [
