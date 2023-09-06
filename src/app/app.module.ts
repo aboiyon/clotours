@@ -31,12 +31,14 @@ import { CartModule } from './features/cart/cart.module';
 import { DataModule } from './data/data.module';
 import { CheckoutModule } from './features/checkout/checkout.module';
 import { AuthModule } from './features/auth/auth.module';
+import { ProductComponent } from './features/products/pages/product/product.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
