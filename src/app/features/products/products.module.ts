@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ProductsRoutingModule } from './products-routing.module';
-import { ToursModule } from '../tours/tours.module';
 import { ClothingModule } from '../clothing/clothing.module';
 import { BeveragesModule } from '../beverages/beverages.module';
 import { LinksModule } from '../links/links.module';
@@ -22,7 +21,6 @@ import { ToursComponent } from './pages/tours/tours.component';
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    // ToursModule,
     ClothingModule,
     BeveragesModule,
     LinksModule
