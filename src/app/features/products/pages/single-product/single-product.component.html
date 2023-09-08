@@ -1,0 +1,9 @@
+<div class="product-detail">
+    <img [src]="product.imageUrl" alt="{{ product.name }}">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <span>Price: {{ product.price | currency:'USD':'symbol':'1.2-2' }}</span>
+    <button (click)="addToCart()">Add to Cart</button>
+    <button (click)="buyNow()">Buy Now</button>
+ </div>
+  
