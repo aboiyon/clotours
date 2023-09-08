@@ -25,9 +25,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   
   .card {
     flex: 0 0 calc(33.33% - 16px); /* Make each card have fixed width */
-    width: 200px; /* Adjust this width as needed */
     margin-right: 20px; /* Add space between cards */
-    /* margin-bottom: 16px; */
     border: 1px solid #ddd; /* Add a border for visual separation */
     padding: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
@@ -41,15 +39,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     scroll-behavior: smooth; /* Add smooth scrolling behavior */
     transition: transform 0.3s;
     padding-left: 20px;
-    width: 1330px;
   }
 
   .service-image {
     height: 500px;
+    max-width: 100%;
   }
 
   .scroll-button {
-    
+    z-index: 2;
   }
   
   /* Tablet styles (2 cards) */

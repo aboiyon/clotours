@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Product } from '../../products.product';
 
 @Component({
   selector: 'app-tours',
@@ -10,7 +11,7 @@ export class ToursComponent {
   @ViewChild('cardsWrapper') cardsWrapper!: ElementRef;
 
 
-  tours = [
+  tours:Product[] = [
     {
       name: 'City Tour',
       description: 'Explore the city\'s landmarks',

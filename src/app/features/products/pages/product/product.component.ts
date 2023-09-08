@@ -1,4 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import { Product } from '../../products.product';
 
 @Component({
   selector: 'app-product',
@@ -9,45 +10,14 @@ export class ProductComponent {
 
   @ViewChild('cardsWrapper') cardsWrapper!: ElementRef;
 
-
-  products = [
-    {
-      name: 'AirBnB',
-      description: 'Explore the city\'s landmarks',
-      imageUrl: '/assets/accessories.png',
-      price: 70.00
-    },
-    {
-      name: 'Cottages',
-      description: 'Discover local spices and flavors',
-      imageUrl: '/assets/palm.jpg',
-      price: 70.00
-    },
-    {
-      name: 'Restaurants',
-      description: 'Discover local spices and flavors',
-      imageUrl: '/assets/island-tour.png',
-      price: 70.00
-    },
-    {
-      name: 'Maji Safi',
-      description: 'Discover local spices and flavors',
-      imageUrl: '/assets/travel.jpg',
-      price: 70.00
-    },
-    {
-      name: 'Mountains',
-      description: 'Discover local spices and flavors',
-      imageUrl: '/assets/travel.jpg',
-      price: 70.00
-    },
-    {
-      name: 'Game Parks',
-      description: 'Discover local spices and flavors',
-      imageUrl: '/assets/travel.jpg',
-      price: 70.00
-    },
-  ];
+  @Input() product: Product = {
+    name: '',
+    description: '',
+    imageUrl: '',
+    price: 0
+  };
+  @Output() scrollLeftClick: EventEmitter<void> = new EventEmitter<void>();
+  @Output() scrollRightClick: EventEmitter<void> = new EventEmitter<void>();
 
   scrollLeft() {
     if (this.cardsWrapper) {
@@ -88,6 +58,14 @@ export class ProductComponent {
     if (t < 1) return c / 2 * t * t + b;
     t--;
     return -c / 2 * (t * (t - 2) - 1) + b;
+  }
+
+  onScrollLeftClick() {
+    this.scrollLeftClick.emit();
+  }
+
+  onScrollRightClick() {
+    this.scrollRightClick.emit();
   }
 
 

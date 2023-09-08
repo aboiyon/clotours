@@ -8,20 +8,28 @@ import { BeveragesModule } from '../beverages/beverages.module';
 import { LinksModule } from '../links/links.module';
 import { ProductListComponent } from './pages/product-list/product-list.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { ProductComponent } from './pages/product/product.component';
+import { ToursComponent } from './pages/tours/tours.component';
 
 
 @NgModule({
   declarations: [
+    ProductComponent,
     ProductsComponent,
-    ProductListComponent
+    ProductListComponent,
+    ToursComponent
   ],
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    ToursModule,
+    // ToursModule,
     ClothingModule,
     BeveragesModule,
     LinksModule
+  ],
+  exports: [
+    ProductComponent,
+    ToursComponent
   ]
 })
 export class ProductsModule { }

@@ -1,25 +1,27 @@
-<div fxLayout = "row" fxLayoutAlign="start center" class="container section">
-    <div class="heading">
-      <!-- <h1>Quick Links</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
-    </div> 
-  <div class="services-container">
-    <div class="scroll-button">
-      <button mat-button (click)="scrollLeft()">&#8249;</button>
-    </div>
+<!-- <div fxLayout = "row" fxLayoutAlign="start center"> -->
+
+  <!-- <div class="services-container">
+
+    
     
     <div class="cards-wrapper" #cardsWrapper>
-      <div class="card" *ngFor="let product of products">
+      <div class="scroll-button">
+        <button mat-button (click)="scrollLeft()">&#8249;</button>
+      </div> -->
+      <div class="">
         <img class="service-image" [src]="product.imageUrl" alt="Tour Site Image">
         <h2>{{ product.name }}</h2>
         <p>{{ product.description }}</p>
         <span>Price: {{ product.price | currency:'USD':'symbol':'1.2-2' }}</span>
       </div>
+      <!-- <div>
+        <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
+      </div>
     </div>
-    <div>
-      <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
-    </div>
+
     
-  </div>
-</div>
+
+  </div> -->
+
+
   
