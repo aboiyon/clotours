@@ -16,17 +16,20 @@
   
   
   <div class="cards-wrapper" #cardsWrapper>
-    <app-product class="card" *ngFor="let tour of tours" [product] = "tour" ></app-product>
-    <!-- <div class="card" *ngFor="let tour of tours">
-      <img class="service-image" [src]="tour.imageUrl" alt="Tour Site Image">
-      <h2>{{ tour.name }}</h2>
-      <p>{{ tour.description }}</p>
-      <span>Price: {{ tour.price | currency:'USD':'symbol':'1.2-2' }}</span>
-    </div> -->
+    <app-product class="card" *ngFor="let tour of tours" (click)="navigateToTourDetail(tour)" [product] = "tour" ></app-product>
   </div>
   <div> 
     <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
   </div>
   
 </div>
+<!-- <div class="product-container" *ngFor="let tour of tours">
+  <app-single-product [product]="tour"></app-single-product>
+</div> -->
 </div>
+<!-- <router-outlet></router-outlet> -->
+
+
+
+
+

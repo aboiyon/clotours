@@ -31,6 +31,7 @@ import { CartModule } from './features/cart/cart.module';
 import { DataModule } from './data/data.module';
 import { CheckoutModule } from './features/checkout/checkout.module';
 import { AuthModule } from './features/auth/auth.module';
+import { CurrencyPipe } from '@angular/common';
 
 
 @NgModule({
@@ -67,7 +68,7 @@ import { AuthModule } from './features/auth/auth.module';
     AuthModule,
 
   ],
-  providers: [{ provide: LOCALE_ID, useValue: 'en-US' }],
+  providers: [{ provide: LOCALE_ID, useValue: 'en-US' }, CurrencyPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,6 +9,7 @@ import { ProductListComponent } from './pages/product-list/product-list.componen
 import { ProductsComponent } from './pages/products/products.component';
 import { ProductComponent } from './pages/product/product.component';
 import { ToursComponent } from './pages/tours/tours.component';
+import { SingleProductComponent } from './pages/single-product/single-product.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ToursComponent } from './pages/tours/tours.component';
     ProductComponent,
     ProductsComponent,
     ProductListComponent,
-    ToursComponent
+    ToursComponent,
+    SingleProductComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { ToursComponent } from './pages/tours/tours.component';
   ],
   exports: [
     ProductComponent,
-    ToursComponent
+    ToursComponent,
+    SingleProductComponent
   ]
 })
 export class ProductsModule { }

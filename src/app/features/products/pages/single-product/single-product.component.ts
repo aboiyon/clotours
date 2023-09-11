@@ -1,14 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Product } from '../../products.product';
+import { Product } from '../../../models/products.product';
 import { ActivatedRoute } from '@angular/router';
 import { ToursComponent } from '../tours/tours.component';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-single-product',
   templateUrl: './single-product.component.html',
   styleUrls: ['./single-product.component.css']
 })
-export class SingleProductComponent implements OnInit{
+export class SingleProductComponent {
 buyNow() {
 throw new Error('Method not implemented.');
 }
@@ -26,13 +27,11 @@ throw new Error('Method not implemented.');
 
   // product: Product[] = [];
 
-  constructor(private route: ActivatedRoute) {}
+  formattedPrice: any;
 
-  ngOnInit(){
-    const routeParams = this.route.snapshot.paramMap;
-    const productIdFromRoute = Number(routeParams.get('productId'));
-
-    // this.product = p.find(product => this.product.id === productIdFromRoute)
+  constructor(private route: ActivatedRoute, private currencyPipe: CurrencyPipe) {
+    this.formattedPrice = this.currencyPipe.transform(this.product.price, 'USD', 'symbol', '1.2-2')
   }
+
 
 }

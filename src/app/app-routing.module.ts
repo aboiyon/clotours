@@ -4,8 +4,11 @@ import { ProductsComponent } from './features/products/pages/products/products.c
 import { HomeComponent } from './home-section/home/home.component';
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { ToursComponent } from './features/products/pages/tours/tours.component';
+import { SingleProductComponent } from './features/products/pages/single-product/single-product.component';
 
 const routes: Routes = [
+  
   {
     path: 'nav', component: NavBarComponent
   },
