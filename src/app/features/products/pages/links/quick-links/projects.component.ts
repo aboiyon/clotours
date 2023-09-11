@@ -1,4 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { Product } from 'src/app/features/models/products.product';
 
 @Component({
   selector: 'app-projects',
@@ -10,44 +12,60 @@ export class ProjectsComponent {
   @ViewChild('cardsWrapper') cardsWrapper!: ElementRef;
 
 
-  accessories = [
+  links: Product[] = [
     {
+      id: 0,
       name: 'AirBnB',
       description: 'Explore the city\'s landmarks',
       imageUrl: '/assets/accessories.png',
       price: 70.00
     },
     {
+      id: 1,
       name: 'Cottages',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/palm.jpg',
       price: 70.00
     },
     {
+      id: 2,
       name: 'Restaurants',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/island-tour.png',
       price: 70.00
     },
     {
+      id: 3,
       name: 'Maji Safi',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/travel.jpg',
       price: 70.00
     },
     {
+      id: 4,
       name: 'Mountains',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/travel.jpg',
       price: 70.00
     },
     {
+      id: 5,
       name: 'Game Parks',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/travel.jpg',
       price: 70.00
     },
   ];
+
+  constructor(private router: Router) {}
+
+
+  navigateToTourDetail(link: any) {
+    if (!link) {
+      throw new Error('The tour variable is undefined');
+    }
+    this.router.navigate(['/links', link.id]); 
+  }
 
   scrollLeft() {
     if (this.cardsWrapper) {
