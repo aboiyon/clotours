@@ -10,7 +10,7 @@ import { ProductsModule } from 'src/app/features/products/products.module';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    ProductsModule
+    // ProductsModule
   ]
 })
 export class HomeModule { }

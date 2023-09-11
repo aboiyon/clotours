@@ -8,13 +8,6 @@ import { HomeComponent } from './home-section/home/home.component';
 import { HomeModule } from './home-section/home/home.module';
 
 import { ProductsModule } from './features/products/products.module';
-import { ToursModule } from './features/tours/tours.module';
-import { ToursRoutingModule } from './features/tours/tours-routing.module';
-import { ClothingModule } from './features/clothing/clothing.module';
-import { ClothingRoutingModule } from './features/clothing/clothing-routing.module';
-import { BeveragesModule } from './features/beverages/beverages.module';
-import { BeveragesRoutingModule } from './features/beverages/beverages-routing.module';
-import { LinksModule } from './features/links/links.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatMenuModule } from '@angular/material/menu';
@@ -43,9 +36,6 @@ import { CurrencyPipe } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     ProductsModule,
-    ToursModule,
-    ClothingModule,
-    BeveragesModule,
     BrowserAnimationsModule,
     MatMenuModule,
     MatIconModule,
@@ -57,10 +47,6 @@ import { CurrencyPipe } from '@angular/common';
     MatListModule,
     HomeModule,
     HomeRoutingModule,
-    ToursRoutingModule,
-    ClothingRoutingModule,
-    BeveragesRoutingModule,
-    LinksModule,
     SharedModule,
     CartModule,
     DataModule,

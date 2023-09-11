@@ -2,16 +2,47 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SingleProductComponent } from './pages/single-product/single-product.component';
 import { ToursComponent } from './pages/tours/tours.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { ClothingComponent } from './pages/clothing/clothing/clothing.component';
+import { HomeMadeComponent } from './pages/clothing/home-made/home-made.component';
+import { ImportsComponent } from './pages/clothing/imports/imports.component';
+import { BeveragesComponent } from './pages/beverages/beverages/beverages.component';
+import { ProjectsComponent } from './pages/links/quick-links/projects.component';
 
 const routes: Routes = [
 
   {
-    path: 'tours', component: ToursComponent 
+    path: 'products', component: ProductsComponent,
   },
 
- {
-   path: 'tours/:id', component: SingleProductComponent
- },
+  {
+    path: 'tours', component: ToursComponent 
+  },
+  {
+    path: 'tours/:id', component: SingleProductComponent
+  },
+
+  {
+    path: 'clothing',
+    component: ClothingComponent,
+  },
+  {
+    path: 'home-made',
+    component:  HomeMadeComponent,
+  },
+  {
+    path: 'imports',
+    component:  ImportsComponent,
+  },
+  {
+    path: 'beverages',
+    component: BeveragesComponent,
+  },
+
+  {
+    path: 'links',
+    component: ProjectsComponent,
+  }
   
 ];
 
