@@ -1,27 +1,10 @@
-<!-- <div fxLayout = "row" fxLayoutAlign="start center"> -->
-
-  <!-- <div class="services-container">
-
-    
-    
-    <div class="cards-wrapper" #cardsWrapper>
-      <div class="scroll-button">
-        <button mat-button (click)="scrollLeft()">&#8249;</button>
-      </div> -->
-      <div class="">
-        <img class="service-image" [src]="product.imageUrl" alt="Tour Site Image">
-        <h2>{{ product.name }}</h2>
-        <p>{{ product.description }}</p>
-        <span>Price: {{ product.price | currency:'USD':'symbol':'1.2-2' }}</span>
-      </div>
-      <!-- <div>
-        <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
-      </div>
-    </div>
-
-    
-
-  </div> -->
+<div class="">
+  <img class="service-image" [src]="product.imageUrl" alt="Tour Site Image">
+  <h2>{{ product.name }}</h2>
+  <p>{{ product.description }}</p>
+  <span>Price: {{ product.price | currency:'USD':'symbol':'1.2-2' }}</span>
+</div>
+     
 
 
   
