@@ -1,4 +1,4 @@
-<div class="product-detail">
+<div class="product-detail" *ngIf="product">
     <img [src]="product.imageUrl" alt="{{ product.name }}">
     <h2>{{ product.name }}</h2>
     <p>{{ product.description }}</p>
@@ -6,4 +6,12 @@
     <button (click)="addToCart()">Add to Cart</button>
     <button (click)="buyNow()">Buy Now</button>
  </div>
+  
+ <!-- <mat-grid-list cols="2" rowHeight="2:1" class="product-detail">
+    <mat-grid-tile><img [src]="product.imageUrl" alt="{{ product.name }}"></mat-grid-tile>
+    <mat-grid-tile><img src="/assets/island.png" alt=""></mat-grid-tile>
+    <mat-grid-tile>{{ product.name }}</mat-grid-tile>
+    <mat-grid-tile><img src="/assets/city.png" alt=""></mat-grid-tile>
+    <mat-grid-tile><button (click)="addToCart()">Add to Cart</button></mat-grid-tile>
+  </mat-grid-list> -->
   

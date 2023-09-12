@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import {MatGridListModule} from '@angular/material/grid-list';
+
+
 import { ProductsRoutingModule } from './products-routing.module';
 import { ProductListComponent } from './pages/product-list/product-list.component';
 import { ProductsComponent } from './pages/products/products.component';
@@ -34,6 +37,7 @@ import { ProjectsComponent } from './pages/links/quick-links/projects.component'
   imports: [
     CommonModule,
     ProductsRoutingModule,
+    MatGridListModule
   ],
   exports: [
     ProductComponent,

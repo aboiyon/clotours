@@ -101,7 +101,7 @@ constructor(private router: Router) {}
     return -c / 2 * (t * (t - 2) - 1) + b;
   }
 
-  navigateToTourDetail(tour: any) {
+  navigateToTourDetail(tour: Product) {
     if (!tour) {
       throw new Error('The tour variable is undefined');
     }

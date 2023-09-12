@@ -9,13 +9,7 @@ import { CurrencyPipe } from '@angular/common';
   templateUrl: './single-product.component.html',
   styleUrls: ['./single-product.component.css']
 })
-export class SingleProductComponent {
-buyNow() {
-throw new Error('Method not implemented.');
-}
-addToCart() {
-throw new Error('Method not implemented.');
-}
+export class SingleProductComponent implements OnInit{
 
   @Input() product: Product = {
     id: '',
@@ -25,13 +19,20 @@ throw new Error('Method not implemented.');
     price: 0
   };
 
-  // product: Product[] = [];
-
   formattedPrice: any;
 
-  constructor(private route: ActivatedRoute, private currencyPipe: CurrencyPipe) {
-    this.formattedPrice = this.currencyPipe.transform(this.product.price, 'USD', 'symbol', '1.2-2')
+  constructor(private currencyPipe: CurrencyPipe) {
   }
 
+  ngOnInit(): void {
+      this.formattedPrice = this.currencyPipe.transform(this.product.price);
+  }
+
+  buyNow() {
+    throw new Error('Method not implemented.');
+    }
+    addToCart() {
+    throw new Error('Method not implemented.');
+    }
 
 }
