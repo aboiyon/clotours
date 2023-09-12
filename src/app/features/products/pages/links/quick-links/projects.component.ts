@@ -12,7 +12,7 @@ export class ProjectsComponent {
   @ViewChild('cardsWrapper') cardsWrapper!: ElementRef;
 
 
-  links: Product[] = [
+  link$: Product[] = [
     {
       id: 0,
       name: 'AirBnB',
@@ -59,14 +59,6 @@ export class ProjectsComponent {
 
   constructor(private router: Router) {}
 
-
-  navigateToTourDetail(link: any) {
-    if (!link) {
-      throw new Error('The tour variable is undefined');
-    }
-    this.router.navigate(['/links', link.id]); 
-  }
-
   scrollLeft() {
     if (this.cardsWrapper) {
       const scrollAmount = -300;
@@ -106,6 +98,13 @@ export class ProjectsComponent {
     if (t < 1) return c / 2 * t * t + b;
     t--;
     return -c / 2 * (t * (t - 2) - 1) + b;
+  }
+
+  navigateToLinkDetail(link: any) {
+    if (!link) {
+      throw new Error('The link variable is undefined');
+    }
+    this.router.navigate(['/link$', link.id]); 
   }
 
 }

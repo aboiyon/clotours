@@ -9,12 +9,7 @@
     </div>
     
     <div class="cards-wrapper" #cardsWrapper>
-      <div class="card" *ngFor="let clothe of clothes">
-        <img class="service-image" [src]="clothe.imageUrl" alt="Tour Site Image">
-        <h2>{{ clothe.name }}</h2>
-        <p>{{ clothe.description }}</p>
-        <span>Price: {{ clothe.price | currency:'USD':'symbol':'1.2-2' }}</span>
-      </div>
+      <app-product class="card" *ngFor="let import of imports" (click) = 'navigateToImportedClotheDetail(import)' [product]="import"></app-product>
     </div>
     <div>
       <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>

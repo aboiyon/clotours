@@ -9,7 +9,7 @@
     </div>
     
     <div class="cards-wrapper" #cardsWrapper>
-      <app-product class="card" *ngFor="let link of links" (click)="navigateToTourDetail(link)" [product] = "link" ></app-product>
+      <app-product class="card" *ngFor="let link of link$" (click)="navigateToLinkDetail(link)" [product] = "link" ></app-product>
     </div>
     <div>
       <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
@@ -17,4 +17,5 @@
     
   </div>
   </div>
+  
   

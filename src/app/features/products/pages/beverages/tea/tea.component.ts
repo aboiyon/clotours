@@ -1,4 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { Product } from 'src/app/features/models/products.product';
 
 @Component({
   selector: 'app-tea',
@@ -10,44 +12,60 @@ export class TeaComponent {
   @ViewChild('cardsWrapper') cardsWrapper!: ElementRef;
 
 
-  beverages = [
+  tea$: Product[] = [
     {
+      id: 0,
       name: 'Smoothie',
       description: 'Explore the city\'s landmarks',
       imageUrl: '/assets/smoothie.png',
       price: 70.00
     },
     {
+      id: 1,
       name: 'Kahawa',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/kahawa.png',
       price: 70.00
     },
     {
+      id: 2,
       name: 'Mnazi',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/mnazi.png',
       price: 70.00
     },
     {
+      id: 3,
       name: 'Maji Safi',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/water.png',
       price: 70.00
     },
     {
+      id: 4,
       name: 'Mango Juice',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/ukwaju.png',
       price: 70.00
     },
     {
+      id: 5,
       name: 'Ukwaju',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/ukaju.png',
       price: 70.00
     },
   ];
+
+  constructor (private route: Router) {}
+
+  navigateToTeaDetails(tea: any) {
+    if (!tea) {
+      throw new Error('Tea variable is missing')
+      
+    }
+    this.route.navigate(['/tea$', tea.id])
+  }
 
   scrollLeft() {
     if (this.cardsWrapper) {

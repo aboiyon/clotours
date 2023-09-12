@@ -1,4 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { Product } from 'src/app/features/models/products.product';
 
 @Component({
   selector: 'app-imports',
@@ -10,56 +12,73 @@ export class ImportsComponent {
   @ViewChild('cardsWrapper') cardsWrapper!: ElementRef;
 
 
-  clothes = [
+  imports: Product[] = [
     {
+      id: 0,
       name: 'Hand Made',
       description: 'Explore the city\'s landmarks',
       imageUrl: '/assets/hand-made.png',
       price: 70.00
     },
     {
+      id: 1,
       name: 'Dera',
       description: 'Explore the city\'s landmarks',
       imageUrl: '/assets/dera.png',
       price: 70.00
     },
     {
+      id: 2,
       name: 'Boots',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/boots.png',
       price: 70.00
     },
     {
+      id: 3,
       name: 'Shorts',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/shorts.png',
       price: 70.00
     },
     {
+      id: 4,
       name: 'Top\'s',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/top.png',
       price: 70.00
     },
     {
+      id: 5,
       name: 'Jeans',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/jeans.png',
       price: 70.00
     },
     {
+      id: 6,
       name: 'Blazers',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/blazer.png',
       price: 70.00
     },
     {
+      id: 7,
       name: 't-shirts',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/tshirts.png',
       price: 70.00
     },
   ];
+
+  constructor (private route: Router) {}
+
+  navigateToImportedClotheDetail (imports: any) {
+    if (!imports) {
+      throw new Error ('The imports variable is missing');
+    }
+    this.route.navigate(['/imports', imports.id])
+  }
 
   scrollLeft() {
     if (this.cardsWrapper) {

@@ -1,4 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { Product } from 'src/app/features/models/products.product';
 
 @Component({
   selector: 'app-coffee',
@@ -10,44 +12,52 @@ export class CoffeeComponent {
   @ViewChild('cardsWrapper') cardsWrapper!: ElementRef;
 
 
-  beverages = [
+  coffee$: Product[] = [
     {
+      id: 0,
       name: 'Smoothie',
       description: 'Explore the city\'s landmarks',
       imageUrl: '/assets/smoothie.png',
       price: 70.00
     },
     {
+      id: 1,
       name: 'Kahawa',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/kahawa.png',
       price: 70.00
     },
     {
+      id: 2,
       name: 'Mnazi',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/mnazi.png',
       price: 70.00
     },
     {
+      id: 3,
       name: 'Maji Safi',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/water.png',
       price: 70.00
     },
     {
+      id: 4,
       name: 'Mango Juice',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/ukwaju.png',
       price: 70.00
     },
     {
+      id: 5,
       name: 'Ukwaju',
       description: 'Discover local spices and flavors',
       imageUrl: '/assets/ukaju.png',
       price: 70.00
     },
   ];
+
+  constructor (private route: Router) {}
 
   scrollLeft() {
     if (this.cardsWrapper) {
@@ -88,6 +98,14 @@ export class CoffeeComponent {
     if (t < 1) return c / 2 * t * t + b;
     t--;
     return -c / 2 * (t * (t - 2) - 1) + b;
+  }
+
+  navigateToCoffeeDetails(coffee: any) {
+    if (!coffee) {
+      throw new Error ('Coffee variable is missing')
+      
+    }
+    this.route.navigate(['/coffee$', coffee.id])
   }
 
 

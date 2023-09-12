@@ -31,18 +31,44 @@ const routes: Routes = [
     component:  HomeMadeComponent,
   },
   {
+    path: 'home-made/:id', component: SingleProductComponent
+  },
+  {
     path: 'imports',
     component:  ImportsComponent,
   },
   {
+    path: 'imports/:id', component: SingleProductComponent
+  },
+  
+  {
     path: 'beverages',
     component: BeveragesComponent,
+  },
+  {
+    path: 'tea',
+    component: BeveragesComponent,
+  },
+  {
+    path: 'tea$/:id', component: SingleProductComponent
+  },
+  {
+    path: 'coffee',
+    component: BeveragesComponent,
+  },
+
+  {
+    path: 'coffee$/:id', component: SingleProductComponent
   },
 
   {
     path: 'links',
     component: ProjectsComponent,
-  }
+  },
+
+  {
+    path: 'link$/:id', component: SingleProductComponent
+  },
   
 ];
 
