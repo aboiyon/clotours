@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgOptimizedImage } from '@angular/common'
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+  
   hovered:boolean[] = [false, false, false, false];
 
   mouseEvent: MouseEvent | null = null;
@@ -16,7 +17,7 @@ export class HomeComponent {
     this.mouseEvent = null;
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
   setMouseEvent(event: any) {

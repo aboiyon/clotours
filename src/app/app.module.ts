@@ -26,6 +26,7 @@ import { CheckoutModule } from './features/checkout/checkout.module';
 import { AuthModule } from './features/auth/auth.module';
 import { CurrencyPipe } from '@angular/common';
 import { CoreModule } from './core/core.module';
+import { CarouselModule } from '@coreui/angular';
 
 
 @NgModule({
@@ -53,8 +54,8 @@ import { CoreModule } from './core/core.module';
     DataModule,
     CheckoutModule,
     AuthModule,
-    CoreModule
-
+    CoreModule,
+    CarouselModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'en-US' }, CurrencyPipe],
   bootstrap: [AppComponent]
