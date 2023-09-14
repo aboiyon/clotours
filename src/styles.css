@@ -4,9 +4,8 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .heading {
-    margin-top: 50px;
-    margin-left: 40px;
-}
+  text-align: center;
+} 
 
   .services-container {
     display: flex;
@@ -15,11 +14,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     flex-direction: row; /* Display cards in a row */
     overflow-x: hidden; /* Enable horizontal scrolling */
     padding: 16px 0; /* vertical padding*/
-    /* margin-left: 120px;  */
-    /* Add left margin */
-    /* margin-right: 150px; */
-    /* padding-right: 16px;  */
-    /* Add right padding */
     overflow: hidden;
   }
   
@@ -50,14 +44,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     z-index: 2;
   }
   
+  .section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
   /* Tablet styles (2 cards) */
   @media (max-width: 1024px) {
     .card {
       flex: 0 0 calc(50% - 16px); /* Distribute 2 cards evenly */
     }
-    .heading {
+    /* .heading {
       margin-left: 40px;
-    }
+    } */
   }
   
   /* Mobile styles (1 card) */
