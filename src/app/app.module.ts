@@ -25,6 +25,7 @@ import { DataModule } from './data/data.module';
 import { CheckoutModule } from './features/checkout/checkout.module';
 import { AuthModule } from './features/auth/auth.module';
 import { CurrencyPipe } from '@angular/common';
+import { CoreModule } from './core/core.module';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { CurrencyPipe } from '@angular/common';
     DataModule,
     CheckoutModule,
     AuthModule,
+    CoreModule
 
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'en-US' }, CurrencyPipe],
