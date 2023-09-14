@@ -1,28 +1,50 @@
 <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <div class="navbar-brand-container">
-      <a class="navbar-brand" routerLink="/home"><h1><b>CloTours</b></h1></a>
+      <a class="navbar-brand" routerLink="/home"><h1><b>BahariTours</b></h1></a>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2  mb-lg-0">
+        <li class="nav-item">
+          <a mat-nav-item routerLink="/home" class="link-button"><b>Home</b></a>
+        </li>
         <li class="nav-item dropdown">
-          <a mat-nav-item routerLink="/clothing" class="link-button"><b>Clothes</b></a>
-          <ul class="dropdown-menu" id="servicesDropdown" mb>
+          <a mat-nav-item routerLink="/tours" class="link-button"><b>Tours</b></a>
+          <ul class="dropdown-menu">
+            <li><a mat-menu-item routerLink="/tours" class="link-button">Popular Tours</a></li>
+            <li><a mat-menu-item routerLink="/deals" class="link-button">Hot Deals</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a mat-nav-item routerLink="/clothing" class="link-button"><b>Booking</b></a>
+          <ul class="dropdown-menu">
             <li><a mat-menu-item routerLink="/home-made" class="link-button">Home Made</a></li>
-            <li><a mat-menu-item routerLink="/imports" class="link-button">Turkish Imports</a></li>
+            <li><a mat-menu-item routerLink="/imports" class="link-button">Imports</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a mat-nav-item routerLink="/beverages" class="link-button"><b>Pages</b></a>
+          <ul class="dropdown-menu">
+            <li><a mat-menu-item routerLink="/faqs" class="link-button">Faqs</a></li>
+            <li><a mat-menu-item routerLink="/gallery" class="link-button">Gallery</a></li>
+            <li><a mat-menu-item routerLink="/contacts" class="link-button">Contact Us</a></li>
+            <li><a mat-menu-item routerLink="/errors" class="link-button">404 Page</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a mat-nav-item routerLink="/links" class="link-button"><b>Shop</b></a>
+          <ul class="dropdown-menu">
+            <li><a mat-menu-item routerLink="/beverages" class="link-button">Beverages</a></li>
+            <li><a mat-menu-item routerLink="/clothing" class="link-button">Clothes</a></li>
+            <li><a mat-menu-item routerLink="/tours" class="link-button">Popular Tours</a></li>
+            <li><a mat-menu-item routerLink="/deals" class="link-button">Hot Deals</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a mat-nav-item routerLink="/tours" class="link-button"><b>Tours</b></a>
-        </li>
-        <li class="nav-item">
-          <a mat-nav-item routerLink="/beverages" class="link-button"><b>Beverages</b></a>
-        </li>
-        <li class="nav-item">
-          <a mat-nav-item routerLink="/links" class="link-button"><b>Quick Links</b></a>
+          <a mat-nav-item routerLink="/links" class="link-button"><b>Blog</b></a>
         </li>
       </ul>
       <div class="form-container">
