@@ -78,24 +78,22 @@
     text-align: left;
   }
 
+  .d-block {
+    height: 80vh;
+  }
+
   @media (max-width: 1024px) {
-    .landing {
-      height: 225%;
+
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      height: 80vh;
     }
-    .sub-image-container {
-      margin-left: -13%;
-      margin-right: -13%;
-    }
+    
   }
 
   @media (max-width: 768px) {
-    .landing {
-      height: 205%;
-    }
-    .sub-image-container {
-      margin-left: -3%;
-      margin-right: -3%;
-    }
+
   }
 
 
