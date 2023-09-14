@@ -1,24 +1,23 @@
 .landing {
   max-width: 100%;
-  height: 80%;
 }
 
 .image-container {
     position: relative;
     overflow: hidden;
-    height: 100%;
+    height: 80vh;
   }
 
-  .sub-image-container {
+  /* .sub-image-container {
     position: relative;
     overflow: hidden;
     height: 34vh;
-  }
+  } */
   
   .bio {
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
