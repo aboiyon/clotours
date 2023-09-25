@@ -1,43 +1,22 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './components/header/header.component';
 import { ErrorComponent } from './components/error/error.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
-
-
-
-// @NgModule({
-//   declarations: [
-//     HeaderComponent,
-//     ErrorComponent,
-//     NotFoundComponent
-//   ],
-//   imports: [
-//     CommonModule,
-//     RouterModule.forChild([
-//       { path: '404', component: NotFoundComponent },
-//       { path: 'error', component: ErrorComponent },
-//       { path: '**', redirectTo: '/404' }
-//     ]
-//   }),
-
-// export class CoreModule { }
+import { UsComponent } from './components/us/us.component';
 
 @NgModule({
-  declarations: [HeaderComponent, NotFoundComponent, ErrorComponent],
+  declarations: [NotFoundComponent, ErrorComponent, UsComponent],
   imports: [
     RouterModule.forChild([
       { path: '404', component: NotFoundComponent },
       { path: 'error', component: ErrorComponent },
       { path: '**', redirectTo: '/404' }
     ]),
-    // MatBadgeModule,
     SharedModule
   ],
   exports: [
-    HeaderComponent,
+    UsComponent
   ]
 })
 export class CoreModule { }

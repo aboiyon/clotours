@@ -29,8 +29,7 @@ import { CurrencyPipe } from '@angular/common';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
