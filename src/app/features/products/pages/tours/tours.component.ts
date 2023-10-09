@@ -170,11 +170,4 @@ constructor(private router: Router, private toursService: ToursService) {}
     return -c / 2 * (t * (t - 2) - 1) + b;
   }
 
-  navigateToTourDetail(tour: Product) {
-    if (!tour) {
-      throw new Error('The tour variable is undefined');
-    }
-    this.router.navigate(['/tours', tour.id]); 
-  }
-
 }
