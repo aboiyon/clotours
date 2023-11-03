@@ -17,9 +17,7 @@ export class ProductComponent {
     imageUrl: '',
     price: 0
   };
-  @Output() scrollLeftClick: EventEmitter<void> = new EventEmitter<void>();
-  @Output() scrollRightClick: EventEmitter<void> = new EventEmitter<void>();
-
+  
   scrollLeft() {
     if (this.cardsWrapper) {
       const scrollAmount = -300;
@@ -60,14 +58,5 @@ export class ProductComponent {
     t--;
     return -c / 2 * (t * (t - 2) - 1) + b;
   }
-
-  onScrollLeftClick() {
-    this.scrollLeftClick.emit();
-  }
-
-  onScrollRightClick() {
-    this.scrollRightClick.emit();
-  }
-
 
 }

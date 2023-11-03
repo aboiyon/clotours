@@ -1,8 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Product } from '../../../models/products.product';
-import { ActivatedRoute } from '@angular/router';
-import { ToursComponent } from '../tours/tours.component';
-import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-single-product',
@@ -19,13 +16,10 @@ export class SingleProductComponent implements OnInit{
     price: 0
   };
 
-  formattedPrice: any;
-
-  constructor(private currencyPipe: CurrencyPipe) {
+  constructor() {
   }
 
   ngOnInit(): void {
-      this.formattedPrice = this.currencyPipe.transform(this.product.price);
   }
 
   buyNow() {

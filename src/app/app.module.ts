@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { HomeComponent } from './home-section/home/home.component';
 import { HomeModule } from './home-section/home/home.module';
 
 import { ProductsModule } from './features/products/products.module';
@@ -24,7 +23,6 @@ import { CartModule } from './features/cart/cart.module';
 import { DataModule } from './data/data.module';
 import { CheckoutModule } from './features/checkout/checkout.module';
 import { AuthModule } from './features/auth/auth.module';
-import { CurrencyPipe } from '@angular/common';
 
 
 @NgModule({
@@ -53,7 +51,7 @@ import { CurrencyPipe } from '@angular/common';
     AuthModule,
 
   ],
-  providers: [{ provide: LOCALE_ID, useValue: 'en-US' }, CurrencyPipe],
+  providers: [{ provide: LOCALE_ID, useValue: 'en-US' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
