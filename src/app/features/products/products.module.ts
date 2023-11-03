@@ -12,6 +12,9 @@ import { SingleProductComponent } from './pages/single-product/single-product.co
 import { ClothingComponent } from './pages/clothing/clothing/clothing.component';
 import { ImportsComponent } from './pages/clothing/imports/imports.component';
 import { HomeMadeComponent } from './pages/clothing/home-made/home-made.component';
+import { MenComponent } from './pages/clothes/men/men.component';
+import { WomenComponent } from './pages/clothes/women/women.component';
+import { KidsComponent } from './pages/clothes/kids/kids.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { HomeMadeComponent } from './pages/clothing/home-made/home-made.componen
     ClothingComponent,
     ImportsComponent,
     HomeMadeComponent,
+    MenComponent,
+    WomenComponent,
+    KidsComponent,
   ],
   imports: [
     CommonModule,

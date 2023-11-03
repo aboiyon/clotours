@@ -1,0 +1,20 @@
+<div fxLayout = "row" fxLayoutAlign="start center" class="container section">
+    <div class="heading">
+      <h1>Women's Latest</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    </div> 
+  <div class="services-container">
+    <div class="scroll-button">
+      <button mat-button (click)="scrollLeft()">&#8249;</button>
+    </div>
+    
+    <div class="cards-wrapper" #cardsWrapper>
+      <app-product class="card" *ngFor="let woman of women$" (click)="navigateToClotheDetail(woman)" [product] = "woman" ></app-product>
+    </div>
+    <div>
+      <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
+    </div>
+    
+  </div>
+  </div>
+  
