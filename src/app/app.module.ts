@@ -23,6 +23,7 @@ import { CartModule } from './features/cart/cart.module';
 import { DataModule } from './data/data.module';
 import { CheckoutModule } from './features/checkout/checkout.module';
 import { AuthModule } from './features/auth/auth.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -49,7 +50,7 @@ import { AuthModule } from './features/auth/auth.module';
     DataModule,
     CheckoutModule,
     AuthModule,
-
+    HttpClientModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'en-US' }],
   bootstrap: [AppComponent]

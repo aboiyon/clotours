@@ -40,7 +40,8 @@ import { KidsComponent } from './pages/clothes/kids/kids.component';
     SingleProductComponent,
     ClothingComponent,
     ImportsComponent,
-    HomeMadeComponent
+    HomeMadeComponent,
+    KidsComponent
   ]
 })
 export class ProductsModule { }
