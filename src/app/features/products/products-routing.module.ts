@@ -6,6 +6,8 @@ import { ProductsComponent } from './pages/products/products.component';
 import { ClothingComponent } from './pages/clothing/clothing/clothing.component';
 import { HomeMadeComponent } from './pages/clothing/home-made/home-made.component';
 import { ImportsComponent } from './pages/clothing/imports/imports.component';
+import { KidsComponent } from './pages/clothes/kids/kids.component';
+import { KidDetailComponent } from './pages/clothes/kid-detail/kid-detail.component';
 
 const routes: Routes = [
 
@@ -18,6 +20,13 @@ const routes: Routes = [
   },
   {
     path: 'tours/:id', component: SingleProductComponent
+  },
+  
+  {
+    path: 'kids', component: KidsComponent
+  },
+  {
+    path: 'kids/:id', component: KidDetailComponent
   },
 
   {
