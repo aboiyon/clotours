@@ -16,6 +16,8 @@ import { MenComponent } from './pages/clothes/men/men.component';
 import { WomenComponent } from './pages/clothes/women/women.component';
 import { KidsComponent } from './pages/clothes/kids/kids.component';
 import { KidDetailComponent } from './pages/clothes/kid-detail/kid-detail.component';
+import { WomanDetailComponent } from './pages/clothes/woman-detail/woman-detail.component';
+import { ManDetailComponent } from './pages/clothes/man-detail/man-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { KidDetailComponent } from './pages/clothes/kid-detail/kid-detail.compon
     WomenComponent,
     KidsComponent,
     KidDetailComponent,
+    WomanDetailComponent,
+    ManDetailComponent,
   ],
   imports: [
     CommonModule,

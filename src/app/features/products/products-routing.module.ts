@@ -8,6 +8,10 @@ import { HomeMadeComponent } from './pages/clothing/home-made/home-made.componen
 import { ImportsComponent } from './pages/clothing/imports/imports.component';
 import { KidsComponent } from './pages/clothes/kids/kids.component';
 import { KidDetailComponent } from './pages/clothes/kid-detail/kid-detail.component';
+import { MenComponent } from './pages/clothes/men/men.component';
+import { ManDetailComponent } from './pages/clothes/man-detail/man-detail.component';
+import { WomenComponent } from './pages/clothes/women/women.component';
+import { WomanDetailComponent } from './pages/clothes/woman-detail/woman-detail.component';
 
 const routes: Routes = [
 
@@ -27,6 +31,22 @@ const routes: Routes = [
   },
   {
     path: 'kids/:id', component: KidDetailComponent
+  },
+
+  {
+    path: 'men', component: MenComponent
+  },
+
+  {
+    path: 'man/:id', component: ManDetailComponent
+  },
+
+  {
+    path: 'women', component: WomenComponent
+  },
+
+  {
+    path: 'woman/:id', component: WomanDetailComponent
   },
 
   {
