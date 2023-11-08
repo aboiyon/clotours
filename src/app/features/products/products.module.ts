@@ -47,7 +47,9 @@ import { ManDetailComponent } from './pages/clothes/man-detail/man-detail.compon
     ClothingComponent,
     ImportsComponent,
     HomeMadeComponent,
-    KidsComponent
+    KidsComponent,
+    MenComponent,
+    WomenComponent
   ]
 })
 export class ProductsModule { }
