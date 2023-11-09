@@ -38,7 +38,7 @@ const routes: Routes = [
   },
 
   {
-    path: 'man/:id', component: ManDetailComponent
+    path: 'men/:id', component: ManDetailComponent
   },
 
   {
@@ -46,7 +46,7 @@ const routes: Routes = [
   },
 
   {
-    path: 'woman/:id', component: WomanDetailComponent
+    path: 'women/:id', component: WomanDetailComponent
   },
 
   {
