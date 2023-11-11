@@ -4,9 +4,9 @@
         <div class="image-container">
             <img src="/assets/landing.png" class="img-fluid" id="blurred-image" alt="photo of beach front">
             <div class="bio text-start">
-                <h1 class="fs-1 fw-bolder"><span>We Are CloTours</span></h1>
+                <h1 class="fs-1 fw-bolder"><span>We Are Hexashop</span></h1>
                 <p class="fw-bold fst-italic">Awesome clean tours website</p>
-                <a routerLink="/products" class="btn btn-outline-light">Our Products</a>
+                <a href="#kids" class="btn btn-outline-light">Purchase Now!</a>
             </div>
         </div>
       </div>
@@ -17,14 +17,14 @@
                 <div class="sub-image-container" (mouseenter)="showDifferentContent(0)" (mouseleave)="hideDifferentContent(0)">
                   <img src="/assets/giraffe.png" class="img-fluid sub-image" alt="photo of beach front">
                   <div class="sub text-center" *ngIf="!hovered[0]">
-                      <h1 class="fs-3 fw-bold"><span>Tours</span></h1>
-                      <p class="fst-italic">Best tour places</p>
+                      <h1 class="fs-3 fw-bold"><span>Kids</span></h1>
+                      <p class="fst-italic">Best Clothes For Kids</p>
                   </div>
                   <div class="overlay">
                     <div class="sub text-center overlay-content" *ngIf="hovered[0]">
-                      <h1 class="fs-3 fw-bold"><span>Tours</span></h1>
-                      <p class="fst-italic">Best tour places</p>
-                      <a routerLink="/tours" class="btn btn-outline-light">Discover More</a>    
+                      <h1 class="fs-3 fw-bold"><span>Kids</span></h1>
+                      <p class="fst-italic">Best Clothes For Kids</p>
+                      <a href="#kids" class="btn btn-outline-light">Discover More</a>    
                     </div>
                   </div>
                 </div>
@@ -33,14 +33,14 @@
                 <div class="sub-image-container" (mouseenter)="showDifferentContent(1)" (mouseleave)="hideDifferentContent(1)">
                   <img src="/assets/deraa.png" class="img-fluid sub-image" alt="photo of beach front">
                   <div class="sub text-center" *ngIf="!hovered[1]">
-                      <h1 class="fs-3 fw-bold"><span>Clothes</span></h1>
-                      <p class="fst-italic">Awesome clean tours website</p>
+                      <h1 class="fs-3 fw-bold"><span>Men</span></h1>
+                      <p class="fst-italic">Best Clothes For Men</p>
                   </div>
                   <div class="overlay">
                     <div class="sub text-center overlay-content" *ngIf="hovered[1]">
-                      <h1 class="fs-3 fw-bold"><span>Clothes</span></h1>
-                      <p class="fst-italic">Awesome clean tours website</p>
-                      <a routerLink="/clothing" class="btn btn-outline-light">Discover More</a>                       
+                      <h1 class="fs-3 fw-bold"><span>Men</span></h1>
+                      <p class="fst-italic">Best Clothes For Men</p>
+                      <a href="#men" class="btn btn-outline-light">Discover More</a>                       
                     </div>
                   </div>
               </div>
@@ -49,14 +49,14 @@
                 <div class="sub-image-container" (mouseenter)="showDifferentContent(2)" (mouseleave)="hideDifferentContent(2)">
                   <img src="/assets/beverage.png" class="img-fluid sub-image" alt="photo of beach front">
                   <div class="sub text-center" *ngIf="!hovered[2]">
-                      <h1 class="fs-3 fw-bold"><span>Beverages</span></h1>
-                      <p class="fst-italic">Awesome clean tours website</p>
+                      <h1 class="fs-3 fw-bold"><span>Women</span></h1>
+                      <p class="fst-italic">Best Clothes For Women</p>
                   </div>
                   <div class="overlay">
                     <div class="sub text-center overlay-content" *ngIf="hovered[2]">
-                      <h1 class="fs-3 fw-bold"><span>Beverages</span></h1>
-                      <p class="fst-italic">Awesome clean tours website</p>
-                      <a routerLink="/beverages" class="btn btn-outline-light">Discover More</a>                       
+                      <h1 class="fs-3 fw-bold"><span>Women</span></h1>
+                      <p class="fst-italic">Best Clothes For Women</p>
+                      <a href="#women" class="btn btn-outline-light">Discover More</a>                       
                     </div>
                   </div>                  
                 </div>
@@ -65,13 +65,13 @@
                 <div class="sub-image-container overflow-hidden" (mouseenter)="showDifferentContent(3)" (mouseleave)="hideDifferentContent(3)">
                   <img src="/assets/tz.png" class="img-fluid sub-image" alt="photo of beach front">
                   <div class="sub text-center" *ngIf="!hovered[3]">
-                      <h1 class="fs-3 fw-bold"><span>Quick Links</span></h1>
-                      <p class="fst-italic">Awesome clean tours website</p>
+                      <h1 class="fs-3 fw-bold"><span>Hand Made</span></h1>
+                      <p class="fst-italic">Custom Made Clothes</p>
                   </div>
                   <div class="overlay">
                     <div class="sub text-center overlay-content" *ngIf="hovered[3]">
-                      <h1 class="fs-3 fw-bold"><span>Quick Links</span></h1>
-                      <p class="fst-italic">Awesome clean tours website</p>
+                      <h1 class="fs-3 fw-bold"><span>Hand Made</span></h1>
+                      <p class="fst-italic">Custom Made Clothes</p>
                       <a routerLink="/links" class="btn btn-outline-light">Discover More</a> 
                     </div>
                   </div>                  
