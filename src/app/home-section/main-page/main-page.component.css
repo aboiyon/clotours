@@ -2,3 +2,8 @@
     margin-bottom: 10%;
     border-bottom: dashed;
 }
+
+.borders {
+    border-top: dashed;
+    margin-bottom: 2.5%;
+  }
