@@ -3,17 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home-section/home/home.component';
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { MainPageComponent } from './home-section/main-page/main-page.component';
 
 const routes: Routes = [
   
   {
-    path: 'nav', component: NavBarComponent
-  },
-  {
-    path: 'footer', component: FooterComponent
-  },
-  {
-    path: '', component: HomeComponent
+    path: '', component: MainPageComponent
   }
 ];
 

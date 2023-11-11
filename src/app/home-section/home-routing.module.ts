@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home.component';
+import { HomeComponent } from './home/home.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent,  pathMatch: 'full'},
+  { path: 'landing', component: MainPageComponent,  pathMatch: 'full'},
+  {
+    path: 'home', component: HomeComponent
+  }
 ];
 
 @NgModule({

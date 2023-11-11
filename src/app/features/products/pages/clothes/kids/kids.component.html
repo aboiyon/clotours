@@ -1,20 +1,24 @@
-<div fxLayout = "row" fxLayoutAlign="start center" class="container section">
-    <div class="heading">
-      <h1>Kid's Latest</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-    </div> 
-  <div class="services-container">
-    <div class="scroll-button">
-      <button mat-button (click)="scrollLeft()">&#8249;</button>
+<div class="container">
+  <div class="row">
+    <div class="container section">
+      <div class="heading">
+        <h1>Kid's Latest</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div> 
+    <div class="services-container">
+      <div class="scroll-button">
+        <button mat-button (click)="scrollLeft()">&#8249;</button>
+      </div>
+      
+      <div class="cards-wrapper" #cardsWrapper>
+        <app-product class="card" *ngFor="let kid of kids" [routerLink]="['/kids', kid.id]" [product] = "kid" ></app-product>
+      </div>
+      <div>
+        <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
+      </div>
+      
     </div>
-    
-    <div class="cards-wrapper" #cardsWrapper>
-      <app-product class="card" *ngFor="let kid of kids" [routerLink]="['/kids', kid.id]" [product] = "kid" ></app-product>
     </div>
-    <div>
-      <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
-    </div>
-    
   </div>
-  </div>
+</div>
   
