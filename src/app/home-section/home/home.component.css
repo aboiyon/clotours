@@ -3,17 +3,19 @@
   height: 80%;
 }
 
-.image-container {
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-  }
+.banner {
+  height: 86.70%;
+}
 
-  .sub-image-container {
-    position: relative;
-    overflow: hidden;
-    height: 34vh;
-  }
+.image-container {
+  position: relative;
+}
+
+.sub-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 34vh;
+}
   
   .bio {
     position: absolute;
@@ -75,7 +77,6 @@
     color: white;
   }
 
-
   @media (max-width: 1024px) {
     .landing {
       height: 225%;
@@ -84,6 +85,15 @@
       margin-left: -13%;
       margin-right: -13%;
     }
+
+    .image-container {
+      margin-bottom: -10%;
+    }
+
+    .margin-small-devices {
+      margin-bottom: -7%;
+    }
+    
   }
 
   @media (max-width: 768px) {
@@ -94,6 +104,15 @@
       margin-left: -3%;
       margin-right: -3%;
     }
+
+    .image-container {
+      margin-bottom: -10%;
+    }
+
+    .margin-small-devices {
+      margin-bottom: -5%;
+    }
+    
   }
 
 
