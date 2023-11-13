@@ -11,7 +11,7 @@
       </div>
       
       <div class="cards-wrapper" #cardsWrapper>
-        <app-product class="card" *ngFor="let kid of kids" [routerLink]="['/kids', kid.id]" [product] = "kid" ></app-product>
+        <app-product class="card" *ngFor="let kid of kids" [routerLink]="['/kids', kid.id]" [product] = "kid"></app-product>
       </div>
       <div>
         <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
