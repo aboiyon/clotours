@@ -38,3 +38,32 @@ img {
   }
 
 
+  @media (max-width: 768px) {
+
+    .product-detail {
+        height: 100vh;
+    }
+    
+    .product-image {
+        margin: 2%;
+    }
+    
+    .product-name {
+        margin: 2%;
+        margin-top: 2%;
+    }
+
+    .product-description {
+        margin: 2%;
+    }
+
+    .product-orders {
+        margin: 2%;
+    }
+
+    .product-total {
+        margin: 2%;
+        
+    }
+    
+  }
