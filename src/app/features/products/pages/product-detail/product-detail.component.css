@@ -1,0 +1,40 @@
+.product-detail {
+    height: 80vh;
+}
+
+img {
+    height: 300px;
+    width: 100%;
+}
+
+.product-detail-section {
+    margin-top: 5%;
+}
+
+.product-image {
+    margin: 10%;
+}
+
+.product-name {
+    margin-top: 10%;
+}
+
+
+
+.main-border-button a {
+    font-size: 13px;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 25px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .3s;
+    text-decoration: none;
+  }
+  
+  .main-border-button a:hover {
+    background-color: black;
+    color: #fff;
+  }
+
+
