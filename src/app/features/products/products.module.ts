@@ -12,6 +12,7 @@ import { KidsComponent } from './pages/clothes/kids/kids.component';
 import { KidDetailComponent } from './pages/clothes/kid-detail/kid-detail.component';
 import { WomanDetailComponent } from './pages/clothes/woman-detail/woman-detail.component';
 import { ManDetailComponent } from './pages/clothes/man-detail/man-detail.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ManDetailComponent } from './pages/clothes/man-detail/man-detail.compon
     KidDetailComponent,
     WomanDetailComponent,
     ManDetailComponent,
+    ProductDetailComponent,
   ],
   imports: [
     CommonModule,
