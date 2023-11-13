@@ -1,5 +1,5 @@
 .product-detail {
-    height: 80vh;
+    height: 90vh;
 }
 
 img {
@@ -8,7 +8,7 @@ img {
 }
 
 .product-detail-section {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .product-image {
@@ -37,11 +37,46 @@ img {
     color: #fff;
   }
 
+  @media (max-width: 1024px) {
+
+    .product-detail {
+        height: 100vh;
+    }
+    
+    .product-image {
+        margin: 2%;
+        width: 100%;
+    }
+    
+    .product-name {
+        margin: 2%;
+        margin-top: 2%;
+    }
+
+    .product-description {
+        margin: 2%;
+    }
+
+    .product-orders {
+        margin: 2%;
+    }
+
+    .product-total {
+        margin: 2%;
+        
+    }
+    
+  }
+
 
   @media (max-width: 768px) {
 
     .product-detail {
-        height: 100vh;
+        height: 120vh;
+    }
+
+    .product-detail-section {
+        margin-top: 25%;
     }
     
     .product-image {
@@ -63,7 +98,7 @@ img {
 
     .product-total {
         margin: 2%;
-        
+        margin-bottom: 5%;
     }
     
   }

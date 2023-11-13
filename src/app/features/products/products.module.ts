@@ -13,6 +13,7 @@ import { KidDetailComponent } from './pages/clothes/kid-detail/kid-detail.compon
 import { WomanDetailComponent } from './pages/clothes/woman-detail/woman-detail.component';
 import { ManDetailComponent } from './pages/clothes/man-detail/man-detail.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    MatGridListModule
+    MatGridListModule,
+    SharedModule
   ],
   exports: [
     ProductComponent,
