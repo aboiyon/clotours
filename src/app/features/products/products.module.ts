@@ -14,6 +14,8 @@ import { WomanDetailComponent } from './pages/clothes/woman-detail/woman-detail.
 import { ManDetailComponent } from './pages/clothes/man-detail/man-detail.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { DesignerComponent } from './pages/clothes/designer/designer.component';
+import { DesignerDetailComponent } from './pages/clothes/designer-detail/designer-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     WomanDetailComponent,
     ManDetailComponent,
     ProductDetailComponent,
+    DesignerComponent,
+    DesignerDetailComponent,
   ],
   imports: [
     CommonModule,
@@ -36,7 +40,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     ProductComponent,
     KidsComponent,
     MenComponent,
-    WomenComponent
+    WomenComponent,
+    DesignerComponent
   ]
 })
 export class ProductsModule { }

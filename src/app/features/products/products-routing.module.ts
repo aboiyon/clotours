@@ -6,6 +6,8 @@ import { MenComponent } from './pages/clothes/men/men.component';
 import { ManDetailComponent } from './pages/clothes/man-detail/man-detail.component';
 import { WomenComponent } from './pages/clothes/women/women.component';
 import { WomanDetailComponent } from './pages/clothes/woman-detail/woman-detail.component';
+import { DesignerComponent } from './pages/clothes/designer/designer.component';
+import { DesignerDetailComponent } from './pages/clothes/designer-detail/designer-detail.component';
 
 const routes: Routes = [
   
@@ -30,6 +32,14 @@ const routes: Routes = [
 
   {
     path: 'women/:id', component: WomanDetailComponent
+  },
+
+  {
+    path: 'designers', component: DesignerComponent
+  },
+
+  {
+    path: 'designers/:id', component: DesignerDetailComponent
   }
   
 ];
