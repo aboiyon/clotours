@@ -34,7 +34,7 @@ ngOnInit(): void {
 ngAfterViewInit(): void {
   // Scroll to the top of the component when it is loaded
   if (this.kidsContainer) {
-    this.kidsContainer.nativeElement.scrollInto({ behavior: 'smooth' });
+    this.kidsContainer.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 }
 
