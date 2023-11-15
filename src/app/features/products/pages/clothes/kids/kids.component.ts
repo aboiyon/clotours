@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { Product } from 'src/app/features/models/products.product';
 import { KidsService } from 'src/app/features/services/kids.service';
 
@@ -7,9 +7,10 @@ import { KidsService } from 'src/app/features/services/kids.service';
   templateUrl: './kids.component.html',
   styleUrls: ['./kids.component.css']
 })
-export class KidsComponent {
+export class KidsComponent implements AfterViewInit{
 
   @ViewChild('cardsWrapper') cardsWrapper!: ElementRef;
+  @ViewChild('kidsContainer') kidsContainer!: ElementRef;
 
   kids: Product[] = [];
   currentKid: Product = {
@@ -28,6 +29,13 @@ constructor(private kidsService: KidsService) {}
 
 ngOnInit(): void {
   this.retrieveKids();
+}
+
+ngAfterViewInit(): void {
+  // Scroll to the top of the component when it is loaded
+  if (this.kidsContainer) {
+    this.kidsContainer.nativeElement.scrollInto({ behavior: 'smooth' });
+  }
 }
 
   retrieveKids(): void {
