@@ -4,10 +4,10 @@ import { HomeComponent } from './home/home.component';
 import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [
-  { path: 'landing', component: MainPageComponent,  pathMatch: 'full'},
-  {
-    path: 'home', component: HomeComponent
-  }
+  // { path: 'landing', component: MainPageComponent,  pathMatch: 'full'},
+  // {
+  //   path: 'home', component: HomeComponent
+  // }
 ];
 
 @NgModule({

@@ -1,5 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/app/features/models/products.product';
+import { CartService } from 'src/app/shared/services/cart.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -15,5 +17,17 @@ export class ProductDetailComponent {
     imageUrl: '',
     price: 0
   };
+
+  quantity: number = 1;
+
+  constructor ( private route: ActivatedRoute, private cartService: CartService) {}
+
+  addToCart(product: Product, quantity: number) {
+    for (let i = 0; i < quantity; i++) {
+      this.cartService.addToCart(product);
+    }
+  
+    window.alert(`Added ${quantity} ${product.name}(s) to the cart!`);
+  }
 
 }

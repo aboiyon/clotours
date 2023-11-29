@@ -1,21 +1,26 @@
-import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import { Product } from '../../../models/products.product';
 
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css']
+  styleUrls: ['./product.component.css'],
 })
 export class ProductComponent {
-
   @ViewChild('cardsWrapper') cardsWrapper!: ElementRef;
 
   @Input() product: Product = {
-    id:'',
+    id: '',
     name: '',
     description: '',
     imageUrl: '',
-    price: 0
+    price: 0,
   };
-
 }

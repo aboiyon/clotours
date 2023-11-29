@@ -16,6 +16,7 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
 import { SharedModule } from 'src/app/shared/shared.module';
 import { DesignerComponent } from './pages/clothes/designer/designer.component';
 import { DesignerDetailComponent } from './pages/clothes/designer-detail/designer-detail.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { DesignerDetailComponent } from './pages/clothes/designer-detail/designe
     CommonModule,
     ProductsRoutingModule,
     MatGridListModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   exports: [
     ProductComponent,

@@ -24,7 +24,6 @@ import { DataModule } from './data/data.module';
 import { CheckoutModule } from './features/checkout/checkout.module';
 import { AuthModule } from './features/auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
-import { MainPageComponent } from './home-section/main-page/main-page.component';
 
 
 @NgModule({
