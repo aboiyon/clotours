@@ -8,7 +8,7 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent {
-  items = new Map<number, { item: any; quantity: number }>(); // use a Map object to store the items in the cart
+  items = new Map<number | string, { item: any; quantity: number }>(); // use a Map object to store the items in the cart
   checkoutForm = this.formBuilder.group({
     name: '',
     address: '',
@@ -31,15 +31,15 @@ export class CartComponent {
     });
     this.cartService.getItems().forEach((item) => {
       // iterate over the items from the cart service
-      if (this.items.has(item.id)) {
+      if (this.items.has(item.name)) {
         // check if the item already exists in the cart
-        let value = this.items.get(item.id); // get the value object of the item
+        let value = this.items.get(item.name); // get the value object of the item
         if (value) {
           value.quantity++; // increment the quantity of the item
-          this.items.set(item.id, value); // update the value object in the cart
+          this.items.set(item.name, value); // update the value object in the cart
         }
       } else {
-        this.items.set(item.id, { item: item, quantity: 1 }); // add the item to the cart with quantity 1
+        this.items.set(item.name, { item: item, quantity: 1 }); // add the item to the cart with quantity 1
       }
     });
     this.shippingCost = this.calculateShippingCost();
