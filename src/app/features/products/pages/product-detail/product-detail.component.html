@@ -32,12 +32,6 @@
           <input type="number" id="quantity" [(ngModel)]="quantity" min="1" />
         </div>
 
-        <div class="product-orders border-bottom">
-          <h2><b></b></h2>
-          <label for="size">Size:</label>
-          <input type="number" id="size" [(ngModel)]="size" min="1" />
-        </div>
-
         <div class="product-total">
           <h4>
             <b
@@ -49,7 +43,7 @@
           </h4>
           <div
             class="main-border-button"
-            (click)="addToCart(product, quantity, size)"
+            (click)="addToCart(product, quantity)"
           >
             <a>Add To Cart</a>
           </div>

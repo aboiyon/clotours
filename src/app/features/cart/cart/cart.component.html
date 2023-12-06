@@ -2,66 +2,49 @@
 <div class="container cart">
   <h1>Cart</h1>
   <div class="row">
-    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 text-center">
-      <div class="cart-item" *ngFor="let entry of items | keyvalue">
-        <img
-          class="item-image"
-          [src]="entry.value.item.imageUrl"
-          alt="entry.value.item.name"
-        />
-      </div>
-    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Product</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let entry of items | keyvalue">
+        <tr>
+          <th scope="row">
+            <img [src]="entry.value.item.imageUrl" alt="product.name" />
+          </th>
+          <td>
+            <span> {{ entry.value.item.name }}</span>
+          </td>
+          <td>
+            <span> {{ entry.value.item.price | currency }}</span>
+          </td>
+          <td>
+            <span> {{ entry.value.quantity }}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-      <div class="cart-item" *ngFor="let entry of items | keyvalue">
-        <span
-          ><h3>Product</h3>
-          {{ entry.value.item.name }}</span
-        >
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-      <div class="cart-item" *ngFor="let entry of items | keyvalue">
-        <span
-          ><h3>Price</h3>
-          {{ entry.value.item.price | currency }}</span
-        >
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-      <div class="cart-item" *ngFor="let entry of items | keyvalue">
-        <span
-          ><h3>Quantity</h3>
-          {{ entry.value.quantity }}</span
-        >
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-      <h3>Subtotal</h3>
-      {{ calculateSubtotal() | currency }}
-    </div>
+    <h3>Subtotal Cost: {{ calculateSubtotal() | currency }}</h3>
 
     <div>
       <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
-        <!-- <div>
-                    <label for="name">
-                        Name
-                    </label>
-                    <input id="name" type="text" formControlName="name">
-                </div>
-
-                <div>
-                    <label for="address">
-                        Address
-                    </label>
-                    <input id="address" type="text" formControlName="address">
-                </div> -->
+        <div>
+          <label for="name"> Name </label>
+          <input id="name" type="text" formControlName="name" />
+        </div>
 
         <div>
-          <label for="shipping"> Shipping </label>
+          <label for="address"> Address </label>
+          <input id="address" type="text" formControlName="address" />
+        </div>
+
+        <div>
+          <label for="shipping"> Shipping options</label>
           <select
             id="shipping"
             formControlName="shipping"

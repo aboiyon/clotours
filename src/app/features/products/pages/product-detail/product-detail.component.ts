@@ -19,18 +19,13 @@ export class ProductDetailComponent {
   };
 
   quantity: number = 1;
-  size: number = 1;
 
   constructor ( private cartService: CartService) {}
 
-  addToCart(product: Product, quantity: number, size: number) {
+  addToCart(product: Product, quantity: number) {
     for (let i = 0; i < quantity; i++) {
       this.cartService.addToCart(product);
     }
-
-    for (let i = 0; i < size; i++) {
-        this.cartService.addToCart(product);
-      }
   
     window.alert(`Added ${quantity} ${product.name}(s) to the cart!`);
   }
