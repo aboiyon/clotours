@@ -13,10 +13,13 @@ import { WordWrapPipe } from './pipes/word-wrap.pipe';
 import { CartComponent } from '../features/cart/cart/cart.component';
 import { ShippingComponent } from './components/shipping/shipping.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RighBannerImageComponent } from './images/righ-banner-image/righ-banner-image.component';
+import { LeftBannerImageComponent } from './images/left-banner-image/left-banner-image.component';
+import { CartImageComponent } from './images/cart-image/cart-image.component';
 
 
 @NgModule({
-  declarations: [NavBarComponent, FooterComponent, ItemQuantityComponent, TitleComponent, SimplePageComponent, WordWrapPipe, CartComponent, ShippingComponent],
+  declarations: [NavBarComponent, FooterComponent, ItemQuantityComponent, TitleComponent, SimplePageComponent, WordWrapPipe, CartComponent, ShippingComponent, RighBannerImageComponent, LeftBannerImageComponent, CartImageComponent],
   imports: [
     CommonModule,
     MatIconModule,
