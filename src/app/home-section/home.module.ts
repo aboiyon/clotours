@@ -7,10 +7,11 @@ import { HomeComponent } from './home/home.component';
 import { ProductsModule } from 'src/app/features/products/products.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MainPageComponent } from './main-page/main-page.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 
 @NgModule({
-  declarations: [MainPageComponent, HomeComponent],
+  declarations: [MainPageComponent, HomeComponent, BannerComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
