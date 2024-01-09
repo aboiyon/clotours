@@ -15,19 +15,24 @@ export class ProductDetailComponent {
     name: '',
     description: '',
     imageUrl: '',
-    price: 0
+    price: 0,
+    quantity: 0,
+    color: ''
   };
 
-  quantity: number = 1;
+  quantity$: number = 1;
 
   constructor ( private cartService: CartService) {}
 
-  addToCart(product: Product, quantity: number) {
-    for (let i = 0; i < quantity; i++) {
+  addToCart(product: Product, quantity$: number) {
+        if (product.quantity < quantity$) {
+                window.alert(`Sorry, there are only ${product.quantity} ${product.name}(s) in stock.`)
+        }
+    for (let i = 0; i < quantity$; i++) {
       this.cartService.addToCart(product);
     }
   
-    window.alert(`Added ${quantity} ${product.name}(s) to the cart!`);
+    window.alert(`Added ${quantity$} ${product.name}(s) to the cart!`);
   }
 
 }

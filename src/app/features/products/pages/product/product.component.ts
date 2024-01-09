@@ -22,5 +22,7 @@ export class ProductComponent {
     description: '',
     imageUrl: '',
     price: 0,
+    quantity: 0,
+    color: ''
   };
 }

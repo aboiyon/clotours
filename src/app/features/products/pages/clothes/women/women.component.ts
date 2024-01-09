@@ -16,7 +16,9 @@ export class WomenComponent {
     name: '',
     description: '',
     imageUrl: '',
-    price: 0.00
+    price: 0.00,
+    quantity: 0,
+    color: ''
   }
 
   currentIndex:  number = -1;
@@ -45,7 +47,9 @@ ngOnInit(): void {
       name: '',
       description: '',
       imageUrl: '',
-      price: 0.00
+      price: 0.00,
+      quantity: 0,
+      color: ''
     };
     this.currentIndex = -1;
   }
@@ -70,7 +74,9 @@ ngOnInit(): void {
       name: '',
       description: '',
       imageUrl: '',
-      price: 0.00
+      price: 0.00,
+      quantity: 0,
+      color: ''
     };
     this.currentIndex = -1;
     this.womenService.findByName(this.name).subscribe({

@@ -15,7 +15,9 @@ export class DesignerDetailComponent {
     name: '',
     description: '',
     imageUrl: '',
-    price: 0
+    price: 0,
+    quantity: 0,
+    color: ''
   };
 
   constructor (private route: ActivatedRoute, private designersService: DesignersService) {}

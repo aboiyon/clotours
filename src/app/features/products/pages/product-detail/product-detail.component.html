@@ -29,7 +29,7 @@
         <div class="product-orders border-bottom">
           <h2><b>No. of Orders</b></h2>
           <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" [(ngModel)]="quantity" min="1" />
+          <input type="number" id="quantity" [(ngModel)]="quantity$" min="1" />
         </div>
 
         <div class="product-total">
@@ -37,13 +37,13 @@
             <b
               >Total:
               {{
-                product.price * quantity | currency : "USD" : "symbol" : "1.2-2"
+                product.price * quantity$ | currency : "USD" : "symbol" : "1.2-2"
               }}</b
             >
           </h4>
           <div
             class="main-border-button"
-            (click)="addToCart(product, quantity)"
+            (click)="addToCart(product, quantity$)"
           >
             <a>Add To Cart</a>
           </div>
