@@ -26,10 +26,15 @@ export class ProductDetailComponent {
 
   addToCart(product: Product, quantity$: number) {
         if (product.quantity < quantity$) {
-                window.alert(`Sorry, there are only ${product.quantity} ${product.name}(s) in stock.`)
+                window.alert(`Sorry, there are only ${product.quantity} ${product.name}(s) in stock.`);
+                quantity$ = product.quantity;
         }
     for (let i = 0; i < quantity$; i++) {
-      this.cartService.addToCart(product);
+//       this.cartService.addToCart(product);
+if (product.quantity > 0) {
+        this.cartService.addToCart(product);
+        product.quantity--;
+}
     }
   
     window.alert(`Added ${quantity$} ${product.name}(s) to the cart!`);
