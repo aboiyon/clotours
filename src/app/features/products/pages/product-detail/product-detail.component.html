@@ -20,11 +20,20 @@
             >Price:
             {{ product.price | currency : "USD" : "symbol" : "1.2-2" }}</span
           >
+
         </div>
 
         <div class="product-description border-bottom">
           <p>{{ product.description }}</p>
         </div>
+
+        <div class="product-description border-bottom">
+                <p>Quantity: {{ product.quantity }}</p>
+        </div>
+
+        <div class="product-description border-bottom">
+                <p>Color: {{ product.color }}</p>
+              </div>
 
         <div class="product-orders border-bottom">
           <h2><b>No. of Orders</b></h2>
