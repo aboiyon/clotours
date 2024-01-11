@@ -1,0 +1,47 @@
+<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="navbar-brand-container">
+      <a class="navbar-brand"><h1><img src="/assets/hexalogo.png" alt="logo"></h1></a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2  mb-lg-0">
+        <li class="nav-item dropdown">
+          <a mat-nav-item (click)="closeNavbar()" class="link-button"><b>Kid's</b></a>
+          <!-- <ul class="dropdown-menu" id="servicesDropdown" mb>
+            <li><a mat-menu-item routerLink="/home-made" class="link-button">Home Made</a></li>
+            <li><a mat-menu-item routerLink="/imports" class="link-button">Turkish Imports</a></li>
+          </ul> -->
+        </li>
+        <li class="nav-item">
+          <a mat-nav-item (click)="closeNavbar()"  class="link-button"><b>Men's</b></a>
+        </li>
+        <li class="nav-item">
+          <a mat-nav-item (click)="closeNavbar()" class="link-button"><b>Women's</b></a>
+        </li>
+        <li class="nav-item">
+          <a mat-nav-item (click)="closeNavbar()"  class="link-button"><b>Hand Made</b></a>
+        </li>
+      </ul>
+      <div class="form-container">
+        <i #searchIcon class="fas fa-search search-icon" (click)="toggleSearchForm()"></i>
+        <form id="form" #searchForm class="search-form d-none" *ngIf="isSearchFormHidden" role="search">
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Search and press enter"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+      <a routerLink="/cart" class="button fancy-button">
+        <em class="material-icons">shopping_cart</em>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+

@@ -1,0 +1,33 @@
+.border {
+    margin-bottom: 10%;
+    border-bottom: dashed;
+}
+
+.borders {
+    border-top: dashed;
+    margin-bottom: 2.5%;
+}
+
+@media (max-width: 1024px) {
+    
+    .margin-small-devices {
+      margin-bottom: 6%;
+    }
+
+    .border {
+        margin-bottom: 18%;
+    }
+    
+  }
+
+  @media (max-width: 768px) {
+
+    .margin-small-devices {
+      margin-bottom: 6%;
+    }
+
+    .border {
+        margin-bottom: 30%;
+    }
+    
+  }
