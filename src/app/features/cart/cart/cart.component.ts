@@ -8,7 +8,8 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent {
-  items = new Map<number | string, { item: any; quantity: number }>(); // use a Map object to store the items in the cart
+        items = this.getCartItems();
+//   items = new Map<number | string, { item: any; quantity: number }>(); // use a Map object to store the items in the cart
   checkoutForm = this.formBuilder.group({
     name: '',
     address: '',
@@ -41,6 +42,7 @@ export class CartComponent {
       } else {
         this.items.set(item.name, { item: item, quantity: 1 }); // add the item to the cart with quantity 1
       }
+      this.saveCartItems();
     });
     this.shippingCost = this.calculateShippingCost();
     this.totalCost = this.calculateTotalCost();
@@ -100,5 +102,16 @@ export class CartComponent {
       }
       this.totalCost = this.calculateTotalCost(); // recalculate the total cost
     }
+    this.saveCartItems();
+  }
+
+  getCartItems(): Map<number | string, {item: any; quantity: number}> {
+        let items = localStorage.getItem('cartItems');
+        return items ? new Map(JSON.parse(items)) : new Map();
+  }
+
+  saveCartItems(): void {
+        localStorage.setItem('cartItems', 
+        JSON.stringify(Array.from(this.items.entries())));
   }
 }
