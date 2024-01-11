@@ -1,16 +1,14 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/app/features/models/products.product';
-import { KidsService } from 'src/app/features/services/kids.service';
 import { CartService } from 'src/app/shared/services/cart.service';
 
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
-  styleUrls: ['./product-detail.component.css']
+  styleUrls: ['./product-detail.component.css'],
 })
 export class ProductDetailComponent {
-
   @Input() product: Product = {
     id: '',
     name: '',
@@ -18,26 +16,27 @@ export class ProductDetailComponent {
     imageUrl: '',
     price: 0,
     quantity: 0,
-    color: ''
+    color: '',
   };
 
   quantity$: number = 1;
 
-  constructor ( private cartService: CartService, private kidsService: KidsService) {}
+  constructor(private cartService: CartService) {}
 
   addToCart(product: Product, quantity$: number) {
-        if (product.quantity < quantity$) {
-                window.alert(`Sorry, there are only ${product.quantity} ${product.name}(s) in stock.`);
-                quantity$ = product.quantity;
-        }
+    if (product.quantity < quantity$) {
+      window.alert(
+        `Sorry, there are only ${product.quantity} ${product.name}(s) in stock.`
+      );
+      quantity$ = product.quantity;
+    }
     for (let i = 0; i < quantity$; i++) {
-if (product.quantity > 0) {
+      if (product.quantity > 0) {
         this.cartService.addToCart(product);
         product.quantity--;
-}
+      }
     }
-  
+
     window.alert(`Added ${quantity$} ${product.name}(s) to the cart!`);
   }
-
 }
