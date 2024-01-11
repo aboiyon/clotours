@@ -18,7 +18,9 @@ export class DesignerComponent implements AfterViewInit{
     name: '',
     description: '',
     imageUrl: '',
-    price: 0.00
+    price: 0.00,
+    quantity: 0,
+    color: ''
   }
 
   currentIndex:  number = -1;
@@ -54,7 +56,9 @@ ngAfterViewInit(): void {
       name: '',
       description: '',
       imageUrl: '',
-      price: 0.00
+      price: 0.00,
+      quantity: 0,
+      color: ''
     };
     this.currentIndex = -1;
   }
@@ -79,7 +83,9 @@ ngAfterViewInit(): void {
       name: '',
       description: '',
       imageUrl: '',
-      price: 0.00
+      price: 0.00,
+      quantity: 0,
+      color: ''
     };
     this.currentIndex = -1;
     this.designersService.findByName(this.name).subscribe({

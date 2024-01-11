@@ -17,7 +17,9 @@ export class MenComponent {
     name: '',
     description: '',
     imageUrl: '',
-    price: 0.00
+    price: 0.00,
+    quantity: 0,
+    color: ''
   }
 
   currentIndex:  number = -1;
@@ -46,7 +48,9 @@ ngOnInit(): void {
       name: '',
       description: '',
       imageUrl: '',
-      price: 0.00
+      price: 0.00,
+      quantity: 0,
+      color: ''
     };
     this.currentIndex = -1;
   }
@@ -71,7 +75,9 @@ ngOnInit(): void {
       name: '',
       description: '',
       imageUrl: '',
-      price: 0.00
+      price: 0.00,
+      quantity: 0,
+      color: ''
     };
     this.currentIndex = -1;
     this.menService.findByName(this.name).subscribe({

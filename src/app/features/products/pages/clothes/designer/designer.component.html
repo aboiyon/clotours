@@ -1,25 +1,33 @@
 <div class="container" id="designers" #designersContainer>
-    <div class="row">
-      <div class="container section">
-        <div class="heading">
-          <h1>Hand Made</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </div> 
+  <div class="row">
+    <div class="container section">
+      <div class="heading">
+        <h1>Hand Made</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </p>
+      </div>
       <div class="services-container">
         <div class="scroll-button">
           <button mat-button (click)="scrollLeft()">&#8249;</button>
         </div>
-        
+
         <div class="cards-wrapper" #cardsWrapper>
-          <app-product class="card" *ngFor="let designer of designers" [routerLink]="['/designers', designer.id]" [product] = "designer"></app-product>
+          <app-product
+            class="card"
+            *ngFor="let designer of designers"
+            [routerLink]="['/designers', designer.id]"
+            [product]="designer"
+          ></app-product>
         </div>
         <div>
-          <button mat-button class="scroll-button" (click)="scrollRight()">&#8250;</button>
+          <button mat-button class="scroll-button" (click)="scrollRight()">
+            &#8250;
+          </button>
         </div>
-        
-      </div>
       </div>
     </div>
   </div>
-    
-  
+</div>

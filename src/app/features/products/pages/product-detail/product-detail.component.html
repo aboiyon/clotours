@@ -1,41 +1,75 @@
 <app-nav-bar class="navigation"></app-nav-bar>
 <div class="product-detail services-container" *ngIf="product">
-    <div class="container">
+  <div class="container">
+    <div class="row product-detail-section">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <div class="product-image">
+          <img [src]="product.imageUrl" alt="{{ product.name }}" />
+        </div>
+        <div class="product-image">
+          <img [src]="product.imageUrl" alt="{{ product.name }}" />
+        </div>
+      </div>
 
-      <div class="row product-detail-section">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text: dark">
+        <div class="product-name border-bottom">
+          <h2>
+            <b>{{ product.name }}</b>
+          </h2>
+          <span
+            >Price:
+            {{ product.price | currency : "USD" : "symbol" : "1.2-2" }}</span
+          >
 
-       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-          <div class="product-image">
-            <img [src]="product.imageUrl" alt="{{ product.name }}">
-          </div>
-          <div class="product-image">
-            <img [src]="product.imageUrl" alt="{{ product.name }}">
-          </div>
-       </div>  
+        </div>
 
-       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text: dark">
-         <div class="product-name border-bottom">
-          <h2><b>{{ product.name }}</b></h2>
-          <span>Price: {{ product.price | currency:'USD':'symbol':'1.2-2' }}</span>
-         </div>
-         
-         <div class="product-description border-bottom">
+        <div class="product-description border-bottom">
           <p>{{ product.description }}</p>
-         </div>
+        </div>
 
-         <div class="product-orders border-bottom">
+        <div class="product-description border-bottom">
+                <p>Quantity: {{ product.quantity }}</p>
+        </div>
+
+        <div class="product-description border-bottom">
+                <p>Color: {{ product.color }}</p>
+              </div>
+
+        <div class="product-orders border-bottom">
           <h2><b>No. of Orders</b></h2>
-         </div>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" [(ngModel)]="quantity$" min="1" />
+        </div>
 
-         <div class="product-total">
-          <h4><b>Total: </b></h4>
-          <div class="main-border-button"><a href="#">Add To Cart</a></div>
-         </div>
+        <div class="product-total">
+          <h4>
+            <b
+              >Total:
+              {{
+                product.price * quantity$ | currency : "USD" : "symbol" : "1.2-2"
+              }}</b
+            >
+          </h4>
+          <div
+            class="main-border-button"
+            (click)="addToCart(product, quantity$)"
+          >
+            <a>Add To Cart</a>
+          </div>
 
+          <div class="main-border-button">
+            <a routerLink="/cart" class="button fancy-button">
+              <em class="material-icons">your_shopping_cart</em>
+            </a>
+          </div>
+        </div>
+
+        <!-- Handle the case where product is not available -->
+        <div *ngIf="!product">
+          <p>Product details not available.</p>
+        </div>
       </div>
-
-      </div>
-
     </div>
+  </div>
 </div>
 <app-footer></app-footer>
