@@ -1,27 +1,59 @@
-# Clotours
+# Hexa-Shop
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
+Root for the new hexashop website(development) <https://clotours-git-develop-aboiyon.vercel.app/>
 
-## Development server
+## Built With
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Angular](https://angular.io/)
+- [Angular Universal](https://angular.io/guide/universal)
 
-## Code scaffolding
+<!-- GETTING STARTED -->
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+To get a local copy up and running, please follow these simple steps.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+Here is what you need to be able to run the ElewaEducation Website.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node.js
+- npm
+- AngularCLI (run the command below to install globally)
 
-## Running end-to-end tests
+```bash
+ npm install -g @angular/cli 
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Setup
 
-## Further help
+1. Clone the repo into a public GitHub repository (fork <https://github.com/aboiyon/clotours/fork>).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```sh
+   git clone https://github.com/{yourusername}/clotours.git
+   ```
+
+2. Go to the project folder
+
+   ```sh
+   cd clotours
+   ```
+
+3. Install packages with npm
+
+   ```sh
+   npm i --legacy-peer-deps
+   ```
+
+4. Set up your `.env` file
+
+   - Navigate into the environments directory `apps/clotours/src/environments`
+   - Duplicate and then Rename `environment.ts.example` to `environment.ts`
+   - Duplicate and then Rename `environment.prod.ts.example` to `environment.prod.ts`
+
+5. Start the dev server
+
+    ```sh
+    ng serve
+    ```
+
